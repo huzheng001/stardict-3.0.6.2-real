@@ -274,7 +274,7 @@ static bool load_custom_langs()
 		enchant_broker_free(broker);
 		broker = NULL;
 		g_print(_("Error, no spellchecking dictionary available!\n"));
-		return false;
+		return true;
 	} else {
 		return false;
 	}
@@ -321,7 +321,7 @@ static bool load_auto_lang()
 		enchant_broker_free(broker);
 		broker = NULL;
 		g_print(_("Error, no spellchecking dictionary available!\n"));
-		return false;
+		return true;
 	} else {
 		dictlist.push_back(dict);
 		return false;
@@ -452,27 +452,34 @@ bool stardict_virtualdict_plugin_init(StarDictVirtualDictPlugInObject *obj)
 {
 	obj->lookup_func = lookup;
 	obj->dict_name = _("Spelling Suggestion");
+	obj->author = _("Hu Zheng");
+	obj->email = _("huzheng001@gmail.com");
+	obj->website = _("http://www.huzheng.org");
+	obj->date = _("2023.12.22");
 	broker = enchant_broker_init();
 	layout = pango_layout_new(gtk_widget_get_pango_context(plugin_info->mainwin));
 
 	std::string res = get_cfg_filename();
 	if (!g_file_test(res.c_str(), G_FILE_TEST_EXISTS)) {
-		g_file_set_contents(res.c_str(), "[spell]\nuse_custom=false\ncustom_langs=\n", -1, NULL);
-	}
-	GKeyFile *keyfile = g_key_file_new();
-	g_key_file_load_from_file(keyfile, res.c_str(), G_KEY_FILE_NONE, NULL);
-	GError *err = NULL;
-	use_custom = g_key_file_get_boolean(keyfile, "spell", "use_custom", &err);
-	if (err) {
-		g_error_free (err);
 		use_custom = false;
-	}
-	gchar *str = g_key_file_get_string(keyfile, "spell", "custom_langs", NULL);
-	if (str) {
-		custom_langs = str;
-		g_free(str);
-	}
-	g_key_file_free(keyfile);
+		custom_langs.clear();
+		g_file_set_contents(res.c_str(), "[spell]\nuse_custom=false\ncustom_langs=\n", -1, NULL);
+	} else {
+    	GKeyFile *keyfile = g_key_file_new();
+	    g_key_file_load_from_file(keyfile, res.c_str(), G_KEY_FILE_NONE, NULL);
+	    GError *err = NULL;
+	    use_custom = g_key_file_get_boolean(keyfile, "spell", "use_custom", &err);
+	    if (err) {
+	    	g_error_free (err);
+	    	use_custom = false;
+	    }
+	    gchar *str = g_key_file_get_string(keyfile, "spell", "custom_langs", NULL);
+	    if (str) {
+	    	custom_langs = str;
+	    	g_free(str);
+	    }
+	    g_key_file_free(keyfile);
+    }
 	bool failed;
 	if (use_custom && !custom_langs.empty()) {
 		failed = load_custom_langs();
@@ -481,6 +488,6 @@ bool stardict_virtualdict_plugin_init(StarDictVirtualDictPlugInObject *obj)
 	}
 	if (failed)
 		return true;
-	g_print(_("Spelling plugin loaded.\n"));
+	g_print(_("Spelling plug-in \033[31m[loaded]\033[0m.\n"));
 	return false;
 }
