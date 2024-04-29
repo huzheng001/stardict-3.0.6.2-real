@@ -488,6 +488,6 @@ bool stardict_virtualdict_plugin_init(StarDictVirtualDictPlugInObject *obj)
 	}
 	if (failed)
 		return true;
-	g_print(_("Spelling plug-in \033[31m[loaded]\033[0m.\n"));
+	g_print(_("Spelling plugin loaded.\n"));
 	return false;
 }
