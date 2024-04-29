@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=StarDict
+_GenericName=Lookup words
+_Comment=StarDict is an international dictionary for GNOME.
+Exec=stardict
+Terminal=false
+Type=Application
+Icon=stardict
+StartupNotify=true
+Categories=Utility;Office;TextTools;Dictionary;
+X-GNOME-DocPath=stardict/stardict.xml
