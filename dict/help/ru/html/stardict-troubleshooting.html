@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Troubleshooting</title>
+<title>Устранение неисправностей</title>
 <link rel="previous" href="stardict-portable.html" title="StarDict Portable">
 <link rel="next" href="stardict-projects.html" title="Связанные проекты">
 <link rel="top" href="index.html" title="StarDict Manual V3.0.6.2">
@@ -418,30 +418,26 @@ dd.answer div.label { float: left; }
 <li>
 <a class="xref" href="index.html" title="StarDict Manual V3.0.6.2">StarDict Manual V3.0.6.2</a><div class="autotoc"><ul>
 <li><a class="xref" href="stardict-introduction.html" title="Введение">Введение</a></li>
-<li><a class="xref" href="stardict-getting-started.html" title="Начало">Начало</a></li>
+<li><a class="xref" href="stardict-getting-started.html" title="Начало работы">Начало работы</a></li>
 <li><a class="xref" href="stardict-usage.html" title="Использование">Использование</a></li>
 <li><a class="xref" href="stardict-prefs.html" title="Настройка">Настройка</a></li>
-<li><a class="xref" href="manage-dicts.html" title="Manage dictionaries">Manage dictionaries</a></li>
+<li><a class="xref" href="manage-dicts.html" title="Управление словарями">Управление словарями</a></li>
 <li><a class="xref" href="manage-plugins.html" title="Manage Plugins">Manage Plugins</a></li>
-<li><a class="xref" href="stardict-details.html" title="Details">Details</a></li>
+<li><a class="xref" href="stardict-details.html" title="Информация">Информация</a></li>
 <li><a class="xref" href="stardict-portable.html" title="StarDict Portable">StarDict Portable</a></li>
-<li>Troubleshooting</li>
+<li>Устранение неисправностей</li>
 <li><a class="xref" href="stardict-projects.html" title="Связанные проекты">Связанные проекты</a></li>
 <li><a class="xref" href="stardict-authors.html" title="Разработчики">Разработчики</a></li>
 </ul></div>
 </li>
 </ul></div></div></div>
 <div class="body body-sidebar"><div class="division sect1">
-<a name="stardict-troubleshooting"></a><div class="header"><h1 class="sect1 title"><span class="title">Troubleshooting</span></h1></div>
+<a name="stardict-troubleshooting"></a><div class="header"><h1 class="sect1 title"><span class="title">Устранение неисправностей</span></h1></div>
 <ul class="linktrail"><li class="linktrail linktrail-only"><a class="linktrail" href="index.html" title="StarDict Manual V3.0.6.2">StarDict Manual V3.0.6.2</a></li></ul>
-<p class="para block block-first">If you experience problems with <span class="application">StarDict</span>, examine <span class="application">StarDict</span> output.
-	By default the application prints the most important messages to standard output and standard error. To see messages, start <span class="application">StarDict</span> from the console.
-	You may increase verbosity of the output using the <span class="parameter" dir="ltr">--message-level</span> command line option, see <a class="xref" href="stardict-details.html#stardict-details-command-line" title="Command line options">Раздел 7.1 ― Command line options</a>.
-	</p>
-<p class="para block">To see standard output and standard error on Windows, start <span class="application">StarDict</span> from windows console and pass non-zero parameter to the <span class="parameter" dir="ltr">--message-level</span> command line option. Unfortunately, often windows console can not display all unicode characters that are sent to output. If this problem effects you, redirect output to a file or use <span class="application">StarDict</span> logging facility.
-	</p>
+<p class="para block block-first">Если в работе <span class="application">StarDict</span> возникают проблемы, изучите вывод <span class="application">StarDict</span>. По умолчанию приложение выводит наиболее важные сообщения в стандартный поток вывода и стандартный поток ошибок. Для просмотра сообщений запустите <span class="application">StarDict</span> из консоли. Вывод можно сделать более подробным с помощью параметра командной строки <span class="parameter" dir="ltr">--message-level</span> (см. <a class="xref" href="stardict-details.html#stardict-details-command-line" title="Параметры командной строки">Раздел 7.1 ― Параметры командной строки</a>).</p>
+<p class="para block">Для просмотра стандартного потока вывода и стандартного потока ошибок в Windows запустите <span class="application">StarDict</span> из консоли Windows и передайте ненулевой аргумент параметру командной строки <span class="parameter" dir="ltr">--message-level</span>. К сожалению, консоль Windows часто не может отобразить все отправляемые на вывод символы Юникода. В этом случае следует перенаправить вывод в файл или воспользоваться возможностью журналирования <span class="application">StarDict</span>.</p>
 <div class=" block figure block-indent">
-<a name="stardict-windows-console-fig"></a><div class="block block-first title title-formal"><span class="title"><span class="label"><span style="font-style: italic; ">Рисунок 13</span> </span>Starting <span class="application">StarDict</span> from windows console</span></div>
+<a name="stardict-windows-console-fig"></a><div class="block block-first title title-formal"><span class="title"><span class="label"><span style="font-style: italic; ">Рисунок 13</span> </span>Запуск <span class="application">StarDict</span> из консоли Windows</span></div>
 <div class="figure-inner"> 
 	 
 	<div class=" block screenshot block-first"> 
@@ -449,9 +445,7 @@ dd.answer div.label { float: left; }
 	</div> 
 	</div>
 </div>
-<p class="para block">In some cases, <span class="application">StarDict</span> prints nothing to console or console is not available.
-	Then turn on logging function, see <a class="xref" href="stardict-details.html#stardict-details-logging" title="Logging">Раздел 7.5 ― Logging</a> for details.
-	</p>
+<p class="para block">Иногда <span class="application">StarDict</span> ничего не выводит в консоль или консоль недоступна. В таком случае следует включить возможность журналирования (подробнее: <a class="xref" href="stardict-details.html#stardict-details-logging" title="Журналирование">Раздел 7.5 ― Журналирование</a>).</p>
 <p class="para block">If <span class="application">StarDict</span> fails to start, it's recommended to set the output message level to the highest value so you can see all produced messages. They may help in diagnosing the cause of the problem. <span class="application">StarDict</span> loads a number of plug-ins at startup. A broken plug-in may crash or hang the entire application. Each plug-in prints <span class="computeroutput" dir="ltr">Loading <span class="symbol" dir="ltr">PLUG-IN NAME</span> plug-in...</span> at the very begging of the plug-in initialization process. <span class="computeroutput" dir="ltr"><span class="symbol" dir="ltr">PLUG-IN NAME</span> plug-in loaded.</span> message marks the end of the initialization process. If you do not see the paired message, the plug-in definitely fails to load. Plug-ins normally print error messages, they may help you to identify and fix the problem. On the other hand, you may simply remove the misbehaving plug-in. Just remove the corresponding library. All plug-in are optional, <span class="application">StarDict</span> will work without plug-ins.
 	</p>
 <p class="para block">Typical <span class="application">StarDict</span> output:

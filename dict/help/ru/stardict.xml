@@ -177,7 +177,7 @@
 				<orgname>ЛНБ</orgname>
 				<address> <email>dubyk@library.lviv.ua</email> </address>
 			</affiliation>
-			<contrib>український переклад</contrib>
+			<contrib>Український переклад</contrib>
 		</othercredit>
 		
 	</authorgroup>
@@ -189,7 +189,7 @@
 <!-- Remember to remove the &manrevision; entity from the revision entries other
    than the current revision. -->
 		<revision>
-			<revnumber>StarDict Руководство В2.4.2</revnumber>
+			<revnumber>Руководство пользователя StarDict, версия 2.4.2</revnumber>
 			<date>Ноябрь 2003</date>
 			<revdescription> 
 				<para role="author">Hu Zheng</para>
@@ -205,7 +205,7 @@
 	</releaseinfo>
 	<legalnotice> 
 		<title>Обратная связь</title>
-		<para>Для сообщения об ошибке или предложения относящимся к <application>StarDict</application> приложению или данному руководству, следуйте указаниям в <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>.</para>
+		<para>Чтобы сообщить об ошибке или передать предложение, связанное с приложением <application>StarDict</application> или данным руководством, следуйте указаниям на <ulink url="ghelp:gnome-feedback" type="help">странице обратной связи GNOME</ulink>.</para>
 <!-- Translators may also add here feedback address for translations -->
 	</legalnotice>
 	<abstract role="description">
@@ -228,7 +228,7 @@
   </sect1>
 
   <sect1 id="stardict-getting-started">
-    <title>Начало</title> 
+    <title>Начало работы</title> 
     
     <sect2 id="stardict-to-start">
     <title>Запуск <application>StarDict</application></title>	
@@ -236,34 +236,34 @@
     <para><application>StarDict</application> можно запустить следующим образом:</para> 
     <variablelist>
     	<varlistentry>
-    		<term>Меню <guimenu>Applications</guimenu></term>
+    		<term>Меню <guimenu>Приложения</guimenu></term>
     		<listitem>
-    		<para>Выбрать <menuchoice><guisubmenu>Accessories</guisubmenu><guimenuitem>StarDict</guimenuitem></menuchoice>.</para>
+    		<para>Выберите пункт меню <menuchoice><guisubmenu>Инструменты</guisubmenu><guimenuitem>StarDict</guimenuitem></menuchoice>.</para>
     		</listitem>
     	</varlistentry>
     	<varlistentry>
     		<term>Командная строка</term>
     		<listitem>
-    		<para>Введите <command>stardict</command>, затем нажмите <keycap>Return</keycap>.</para>
+    		<para>Введите команду <command>stardict</command>, затем нажмите клавишу <keycap>Return</keycap>.</para>
             <para>Можно указать также слово для поиска:</para>
 	        <para>
             <command>stardict <replaceable>слово</replaceable></command>
             </para>
             <para>или шаблон для поиска:</para>  
             <para>
-            <command>stardict <replaceable>wo?d*</replaceable></command>
+            <command>stardict <replaceable>сло?о*</replaceable></command>
             </para>
             <para>или выполнить нечёткий запрос:</para>  
             <para>
-            <command>stardict <replaceable>/word</replaceable></command>
+            <command>stardict <replaceable>/слово</replaceable></command>
             </para>
     		</listitem>
     	</varlistentry>
     </variablelist>
     <note>
-      <para>Если <application>StarDict</application> уже запушен. В Windows версии <application>StarDict</application> активирует первый экземпляр <application>StarDict</application>, затем завершается. В Gnome версии <application>StarDict</application> активирует первый экземпляр <application>StarDict</application>, запрашивает слово в этом экземпляре (если оно было указано в командной строке), затем завершается.</para>
+      <para>Если приложение <application>StarDict</application> уже запущено. В версии для Windows <application>StarDict</application> активирует первый экземпляр <application>StarDict</application>, затем завершает работу. В версии для Gnome <application>StarDict</application> активирует первый экземпляр <application>StarDict</application>, выполняет поиск слова в этом экземпляре (если оно было указано в командной строке), затем завершает работу.</para>
     </note>
-	<para>Смотри <xref linkend="stardict-details-command-line"/> для полного описания опций командной строки..</para>
+	<para>Полное описание параметров командной строки: <xref linkend="stardict-details-command-line"/>.</para>
     </sect2>
     
     <sect2 id="stardict-main-window">
@@ -286,42 +286,38 @@
       </figure>
     <!-- ==== End of Figure ==== -->
     
-    <para>Главное окно <guilabel>StarDict</guilabel> состоит из следующих элементов:</para>
+    <para><firstterm>Главное окно</firstterm> <guilabel>StarDict</guilabel> состоит из следующих элементов:</para>
     <variablelist>
 		<varlistentry>
 		<term>Верхняя панель</term>
 		<listitem>
-		<para>The top bar consists of the <firstterm>Search field</firstterm> and a number of buttons. Here they are in the order from left to right.
-		</para>
+		<para>Верхняя панель содержит <firstterm>Поле поиска</firstterm> и несколько кнопок. Далее они перечислены в порядке слева направо.</para>
 		<variablelist>
 			<varlistentry>
-			<term><guilabel>Clear</guilabel></term>
+			<term><guilabel>Очистить</guilabel></term>
 			<listitem>
-			<para>Clears the Search field.
-			</para>
+			<para>Очищает поле поиска.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><firstterm>Поисковое поле</firstterm></term>
+			<term><firstterm>Поле поиска</firstterm></term>
 			<listitem>
-			<para>Используйте поле поиска для ввода слов, которые хотите найти. В выпадающем списке отображены последние запрошенные слова.</para>
+			<para>Используйте поле поиска для ввода слов, которые требуется найти. В раскрывающемся списке показаны последние запрошенные слова.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><firstterm><guilabel>Fuzzy Query</guilabel></firstterm></term>
+			<term><firstterm><guilabel>Нечёткий запрос</guilabel></firstterm></term>
 			<listitem>
-			<para>Fuzzy queries the word entered into the Search field.
-			</para>
+			<para>Выполняет нечёткий запрос слова, введённого в поле поиска.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Go Back</guilabel></term>
+			<term><guilabel>Назад</guilabel></term>
 			<listitem>
-			<para>Go back to the word you queried before. Right-click to see a list of words you queried earlier.
-			</para>
+			<para>Вернуться к слову, запрошенному ранее. Щёлкните правой кнопкой мыши для просмотра списка запрошенных ранее слов.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -336,31 +332,28 @@
 		</varlistentry>
 		
 		<varlistentry>
-		<term>Left bar</term>
+		<term>Левая панель</term>
 		<listitem>
-		<para>The Left bar contains a number of buttons, here they are in the order from  top to bottom:
-		</para>
+		<para>Левая панель содержит несколько кнопок, далее они перечислены в порядке сверху вниз:</para>
 		<variablelist>
 			<varlistentry>
 			<term><firstterm><guilabel>Список слов</guilabel></firstterm></term>
 			<listitem>
-			<para>Открывается список слов, которые были найдены при поиске.</para>
+			<para>Открывает список слов, которые были найдены при поиске.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><firstterm><guilabel>Results list</guilabel></firstterm></term>
+			<term><firstterm><guilabel>Список результатов</guilabel></firstterm></term>
 			<listitem>
-			<para>Opens a list of sources, mainly dictionaries, where the current word has been found. The Definition area combines results from all the sources. Clicking a source in the list scrolls the Definition area window to the definition from that source.
-			</para>
+			<para>Открывает список источников (главным образом — словарей), где найдено текущее слово. В области определений находятся результаты из всех источников. Если щёлкнуть по какому-либо источнику в списке, в окне области выполняется прокрутка к определению из этого источника.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Full-Text Translation</guilabel></term>
+			<term><guilabel>Полнотекстовый перевод</guilabel></term>
 			<listitem>
-			<para>Switches to the Full-text translation mode that allows to translate blocks of text, see <xref linkend="stardict-translation"/>.
-			</para>
+			<para>Переключает в режим полнотекстового перевода, который позволяет переводить блоки текста. См. <xref linkend="stardict-translation"/>.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -373,10 +366,9 @@
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Previous word</guilabel> and <guilabel>Next word</guilabel></term>
+			<term><guilabel>Предыдущее слово</guilabel> и <guilabel>Следующее слово</guilabel></term>
 			<listitem>
-			<para>These buttons are at the bottom part of the Left bar. They work with the Word list and allow to switch to previous and next words in the Word list.
-			</para>
+			<para>Эти кнопки расположены в нижней части левой панели. Они используются для работы со списком слов и позволяют переключаться между предыдущим и следующим словами в нём.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -386,69 +378,59 @@
 		</varlistentry>
 		
 		<varlistentry>
-		<term>Bottom bar</term>
+		<term>Нижняя панель</term>
 		<listitem>
-		<para>The left part of the bar in the order from left to right:
-		</para>
+		<para>Левая часть панели в порядке слева направо:</para>
 		<variablelist>
 			<varlistentry>
-			<term><guilabel>Поиск выделенного</guilabel> checkbox</term>
+			<term>Флажок <guilabel>Сканирование выделенного</guilabel></term>
 			<listitem>
-			<para>Enable and disables the Scan mode.
-			Checking the <guibutton>Scan selection</guibutton> check button will cause <application>StarDict</application>
-			to automatically look up words that you highlight in any application.
-			See <xref linkend="stardict-scan-selection"/> for more details about the Scan mode.
-			</para>
+			<para>Включает или отключает режим поиска выделенного. Если флажок <guibutton>Сканирование выделенного</guibutton> установлен, <application>StarDict</application> будет автоматически пытаться найти слова, выделенные пользователем в любом приложении. Дополнительные сведения о режиме поиска выделенного: <xref linkend="stardict-scan-selection"/>.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Info</guilabel></term>
+			<term><guilabel>Информация</guilabel></term>
 			<listitem>
-			<para>Shows an introduction to using <application>StarDict</application> in the Definition area.
-			</para>
+			<para>Показывает вводную информацию об использовании <application>StarDict</application> в области определений.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Quit</guilabel></term>
+			<term><guilabel>Выйти</guilabel></term>
 			<listitem>
-			<para>Закрыть <application>StarDict</application>.</para>
+			<para>Закрывает <application>StarDict</application>.</para>
 			</listitem>
 			</varlistentry>
 		</variablelist>
 
-		<para>The right part of the bar in the order from left to right:
-		</para>
+		<para>Правая часть панели в порядке слева направо:</para>
 		<variablelist>
 			<varlistentry>
-			<term><firstterm><guilabel>Internet search</guilabel></firstterm></term>
+			<term><firstterm><guilabel>Поиск в Интернете</guilabel></firstterm></term>
 			<listitem>
-			<para>Click the button to initiate Internet search. By default, the first website is used, but you may select any configured website right-clicking the button. <application>StarDict</application> queries the word in the Search field sending a GET request to the configured web page. Result are shown in a web browser. To configure the list of websites see <xref linkend="stardict-prefs-main-window-searchwebsite"/>.
-			</para>
+			<para>Нажмите кнопку для выполнения поиска в Интернете. По умолчанию используется первый веб-сайт, но по щелчку правой кнопкой мыши можно выбрать любой настроенный веб-сайт. <application>StarDict</application> выполняет поиск слова, указанного в поле поиска, путём отправки запроса GET к настроенной веб-странице. Результаты отображаются в веб-браузере. Сведения о настройке списка веб-сайтов: <xref linkend="stardict-prefs-main-window-searchwebsite"/>.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>StarDict project website</guilabel></term>
+			<term><guilabel>Веб-сайт проекта StarDict</guilabel></term>
 			<listitem>
-			<para>Открыть веб-сайт проекта <application>StarDict</application> в веб-браузере.</para>
+			<para>Открывает веб-сайт проекта <application>StarDict</application> в веб-браузере.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Manage dictionaries</guilabel></term>
+			<term><guilabel>Управление словарями</guilabel></term>
 			<listitem>
-			<para>Opens <firstterm>Manage dictionaries</firstterm> dialog that allows to configure dictionaries to use, organize them in groups and more.
-			</para>
+			<para>Открывает диалоговое окно <firstterm>Управление словарями</firstterm>, которое позволяет настроить словари для использования, организовать их в группы, а также сделать многое другое.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
 			<term><guilabel>Настройка</guilabel></term>
 			<listitem>
-			<para>Opens the <firstterm>Preferences</firstterm> dialog that allows to configuration a multitude of parameters pertaining to <application>StarDict</application>. See <xref linkend="stardict-prefs"/>.
-			</para>
+			<para>Открывает диалоговое окно <firstterm>Настройка</firstterm>, которое позволяет настроить множество параметров <application>StarDict</application>. См. <xref linkend="stardict-prefs"/>.</para>
 			</listitem>
 			</varlistentry>
 		</variablelist>
@@ -458,48 +440,34 @@
 		<varlistentry>
 		<term><firstterm>Список слов</firstterm></term>
 		<listitem>
-		<para>The smallest half of the <application>StarDict</application> Main window on the left.
-		It contains a list of words that have been found in search.
-		Click a word to show the related articles in the Definition area.
-		You may use a spliter in the middle of the <application>StarDict</application> Main window to divide the space between the Word list and the Definition area.
-		</para>
+		<para>Меньшая половина главного окна <application>StarDict</application>, расположенная слева. Она содержит список слов, которые были найдены при поиске. Щёлкните по слову для просмотра связанных с ним статей в области определений. Для разделения пространства между списком слов и областью определений можно воспользоваться специальным разделителем в середине главного окна <application>StarDict</application>.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term><firstterm>Область перевода</firstterm></term>
+		<term><firstterm>Область определений</firstterm></term>
 		<listitem>
-		<para>The largest half of the <application>StarDict</application> Main window on the right.
-		<application>StarDict</application> displays definition of a word in this area of the window.
-		You may use a spliter in the middle of the StarDict main window to divide the space between the Word list and the Definition area. 
-		The Definition area has its own bars: a top toolbar (see <xref linkend="stardict-definition-aria-toolbar"/>)  and a bottom search bar (only visible when you search in the Definition area).
-		</para>
+		<para>Большая половина главного окна <application>StarDict</application>, расположенная справа. В этой области окна <application>StarDict</application> показывает определение слова. Для разделения пространства между списком слов и областью определений можно воспользоваться специальным разделителем в середине главного окна StarDict. Область определений содержит свои собственные панели: панель инструментов сверху (см. <xref linkend="stardict-definition-aria-toolbar"/>) и панель поиска снизу (видна только при поиске в области определений).</para>
 		</listitem>
 		</varlistentry>
 	</variablelist>
 	
-	<para>The following hotkeys are available in the Main window.
-	</para>
+	<para>В главном окне доступны следующие комбинации клавиш.</para>
 	
 	<variablelist>
-		<title>Hotkeys</title>
+		<title>Комбинации клавиш</title>
 		<varlistentry>
-		<term><mousebutton>middle</mousebutton> mouse button</term>
+		<term><mousebutton>средняя</mousebutton> кнопка мыши</term>
 		<listitem>
-		<para>
-		This hotkey applies to the Definition area only.
-		</para>
-		<para>Query the text selected in the Definition area into the Main window.
-		In Windows edition of <application>StarDict</application>, if there is no selected text, query clipboard content into the Main window.
-		</para>
+		<para>Эта комбинация клавиш работает только в области определений.</para>
+		<para>Искать выбранный в области определений текст в главном окне. В версии <application>StarDict</application> для Windows в том случае, если текст не выбран, в главном окне будет выполнен поиск содержимого буфера обмена.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term><mousebutton>right</mousebutton> mouse button</term>
+		<term><mousebutton>правая</mousebutton> кнопка мыши</term>
 		<listitem>
-		<para>Show pop-up menu.
-		</para>
+		<para>Показать всплывающее меню.</para>
 		</listitem>
 		</varlistentry>
 	</variablelist>
@@ -507,119 +475,84 @@
     </sect2>
 
 	<sect2 id="stardict-definition-aria-toolbar">
-		<title><firstterm>Панель инструментов области перевода</firstterm></title>
-		<para>The Definition area toolbar is at the top of the <guilabel>Definition area</guilabel>.
-		It contains a number of buttons. Here they are in the left-to-right order.
-		</para>
+		<title><firstterm>Панель инструментов области определений</firstterm></title>
+		<para>Панель инструментов области определений находится в её верхней части. Она содержит несколько кнопок. Далее они перечислены в порядке слева направо.</para>
 		<variablelist>
 			<varlistentry>
-			<term><guilabel>Hide(Show) the Word list</guilabel></term>
+			<term><guilabel>Скрыть или показать список слов</guilabel></term>
 			<listitem>
-			<para>Hide or show the Word list or the Results list, depending on what is active now.</para>
+			<para>Скрыть или показать список слов или список результатов (в зависимости от того, какой из них активен)</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Copy</guilabel></term>
+			<term><guilabel>Копировать</guilabel></term>
 			<listitem>
-			<para>
-			Copy the Definition area text into clipboard, all the text.
-			</para>
+			<para>Копировать весь текст в области определений в буфер обмена.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Pronounce the word</guilabel></term>
+			<term><guilabel>Произнести слово</guilabel></term>
 			<listitem>
-			<para>This is a button with an additional dropdown menu.
-			Clicking the button you make <application>StarDict</application> pronounce the current word using the first TTS engine that can do that. The dropdown menu allows you to select the TTS engine to use.
-			</para>
+			<para>Это кнопка с дополнительным раскрывающимся меню. При её нажатии <application>StarDict</application> произнесёт текущее слово с помощью первой программы синтеза речи, которая позволяет это сделать. В раскрывающемся меню можно выбрать программу, которую следует использовать.</para>
 			<variablelist>
-				<title>TTS engines</title>
+				<title>Программы синтеза речи</title>
 				<varlistentry>
-				<term><guimenuitem>Real People TTS</guimenuitem></term>
+				<term><guimenuitem>Синтез речи «Реальные люди»</guimenuitem></term>
 				<listitem>
-				<para>
-				This engine use sound samples performed by real people.
-				</para>
+				<para>Эта программа использует звуковые образцы, записанные реальными людьми.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guimenuitem>Espeak TTS</guimenuitem></term>
+				<term><guimenuitem>Программа синтеза речи Espeak</guimenuitem></term>
 				<listitem>
-				<para>
-				Espeak TTS plugin.
-				</para>
+				<para>Модуль синтеза речи Espeak.</para>
 				</listitem>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guimenuitem>Festival TTS</guimenuitem></term>
+				<term><guimenuitem>Программа синтеза речи Festival</guimenuitem></term>
 				<listitem>
-				<para>
-				Festival TTS plugin.
-				</para>
+				<para>Модуль синтеза речи Festival.</para>
 				</listitem>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guimenuitem>Команда TTS</guimenuitem></term>
+				<term><guimenuitem>Команда запуска синтеза речи</guimenuitem></term>
 				<listitem>
-				<para>
-				TTS command you may specify in the Preferences dialog.
-				See <xref linkend="stardict-prefs-dictionary-sound"/>.
-				</para>
+				<para>Команда запуска синтеза речи, которую можно указать в меню «Настройка». См. <xref linkend="stardict-prefs-dictionary-sound"/>.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
-			<para>
-			Depending on configuration settings, installed plugins and other factors, the list of TTS engines may be shorter.
-			</para>
+			<para>В зависимости от параметров настройки, установленных модулей и прочих факторов, перечень программ синтеза речи может быть более коротким.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Save to file</guilabel></term>
+			<term><guilabel>Сохранить в файл</guilabel></term>
 			<listitem>
-			<para>
-			Save Definition area text into a file. The new text is appended to the end of the file.
-			The file to use is specified in the <xref linkend="stardict-prefs-dictionary-export"/>
-			section of the <guilabel>Preferences</guilabel> dialog. You may also specify to export
-			only the found word, not its definition. 
-			<application>StarDict</application> exports not the word you searched for but the word that was found, the one which translation is shown in the Definition area.
-			When "export only word" is not specified, selection is taken into account.
-			When text is selected in the Definition area, the selected text is exported prepended with the found word. When there are no selected text, all text of the Definition area is exported.
-			</para>
-			<para>Hotkey: <keycombo><keycap>Alt</keycap><keycap>e</keycap></keycombo>
-			</para>
+			<para>Сохранить текст, расположенный в области определений, в файл. Новый текст добавляется в конец файла. Файл для использования указывается в разделе <xref linkend="stardict-prefs-dictionary-export"/> диалога <guilabel>Настройка</guilabel>. Также можно задать экспорт только найденного слова, а не его определения. <application>StarDict</application> выполняет экспорт не того слова, которое было указано в поисковом запросе, а того слова, которое было найдено (т.е. слова, перевод которого показан в области определений). Если флажок «Экспортировать только слова» не установлен, учитывается выделение. Когда в области определений выделяется текст, он экспортируется (при этом найденное слово предваряет этот текст). Если же текст не был выделен, экспортируется весь текст в области определений.</para>
+			<para>Комбинация клавиш: <keycombo><keycap>Alt</keycap><keycap>e</keycap></keycombo></para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><guilabel>Search in the Definition text</guilabel></term>
+			<term><guilabel>Искать в области определений слова</guilabel></term>
 			<listitem>
-			<para>
-			Search for text in the Definition area. This button opens the Definitiona area Search bar at the bottom of the Definition area where you may type a word to search.
-			</para>
-			<para>Hotkey: <keycombo><keycap>Ctrl</keycap><keycap>f</keycap></keycombo>
-			</para>
+			<para>Искать текст в области определений. Эта кнопка открывает в нижней части области определений панель поиска, где можно указать слово для поиска.</para>
+			<para>Комбинация клавиш: <keycombo><keycap>Ctrl</keycap><keycap>f</keycap></keycombo></para>
 			</listitem>
 			</varlistentry>
 		</variablelist>
 	</sect2>
 	
     <sect2 id="stardict-notification-area">
-    <title>Иконка области уведомления</title>
-	<para>
-	<application>StarDict</application> will also add an icon to the Notification area.  When you iconify the Main window, the 
-	window will be hiden.  After you click the icon, the window will be shown again.  If you right click this icon, it 
-	will popup a menu where you can choose to toggle <guimenuitem>Scan selection</guimenuitem>, or to <guimenuitem>Quit</guimenuitem>.
-	You can toggle <guimenuitem>Scan selection</guimenuitem> directly by ctrl-clicking the icon. Clicking the middle mouse button on 
-	the icon will query the selected word.
-	</para>
+    <title>Значок в области уведомлений</title>
+	<para><application>StarDict</application> также добавляет значок в область уведомлений. При сворачивании главное окно скрывается. После щелчка по этому значку окно будет показано снова. Если щёлкнуть по значку правой кнопкой мыши, появится всплывающее меню, которое позволяет включить или отключить опцию<guimenuitem>Сканирование выделенного</guimenuitem> или воспользоваться опцией <guimenuitem>Выйти</guimenuitem>. Включить или отключить опцию <guimenuitem>Сканирование выделенного</guimenuitem> также можно напрямую, путём щелчка по значку при нажатой клавише Ctrl. Если щёлкнуть по значку с нажатием средней кнопки мыши, будет выполнен поиск выделенного слова.</para>
 	<figure id="stardict-notification-area-fig"> 
-	<title><application>StarDict</application> иконка области уведомления</title> 
+	<title>Значок <application>StarDict</application> в области уведомлений</title> 
 	<screenshot> 
 		<mediaobject> 
 			<imageobject><imagedata fileref="figures/stardict_notification_area.png" format="PNG"/> 
@@ -633,46 +566,18 @@
 	</sect2>
 
     <sect2 id="stardict-scan-selection">
-    <title>Сканировать выделенное</title>
+    <title>Сканирование выделенного</title>
 
-	<para><application>StarDict</application> can automatically scan selections. This means that when you select a word or phrase
-	in <application>StarDict</application> or in any other application, 
-	<application>StarDict</application> will get the text that you selected and search for it, then display the Floating window containing the result of the search. </para>
-	<para>
-	In Windows the Scan mode works differently. It has nothing to do with selection in fact.
-	<application>StarDict</application> extracts the text under the pointer when you pause the mouse for a while.
-	Normally <application>StarDict</application> looks up a word under the pointer, if the pointer is not over a word,
-	then words to the left and the right of the pointer are considered.
-	It is time to say what <application>StarDict</application> considers as a word. <application>StarDict</application> gives a number of tries.
-	First, it considers a word may include anything but spaces and punctuations;
-	second, a word consisting of only letters; a word of lower case letters; a word of upper case letters; a capitalized word of letters. Finally, <application>StarDict</application> uses one of the tried word to find the longest prefix making a word.
-	You may help <application>StarDict</application> to extract the right word or a part of a word selecting it.
-	Although <application>StarDict</application> does not work with selections, selection may effect the text <application>StarDict</application> gets.
-	</para>
-	<para>
-	Scanning in Windows may not work with some applications.
-	For example, it's known that scanning does not work
-	with <application>FireFox 3.x</application> and <application>Windows Console</application> (cmd.exe process).
-	The scanning feature depends on the way application outputs text.
-	If scanning does not work, you may harness another <application>StarDict</application> feature ‒ 
-	<firstterm>Clipboard scanning</firstterm>, see 
-	<xref linkend="stardict-prefs-dictionary-scan"/>.
-	</para>
-	<para>
-	In Windows <application>StarDict</application> works specially with some applications. First, <application>StarDict</application> itself.
-	To scan a word in <application>StarDict</application> Main window you need to select it. 
-	The Scan mode in <application>StarDict</application> Main window works exactly as it should in general case, 
-	the fact that it's Windows does not matter. 
-	You can not scan in other <application>StarDict</application> windows however. 
-	</para>
+	<para><application>StarDict</application> может автоматически выполнять сканирование выделенного: когда слово или фраза выделяются в <application>StarDict</application> или в любом другом приложении, <application>StarDict</application> получает выделенный текст и выполняет его поиск, а затем показывает всплывающее окно с результатом.</para>
+	<para>В Windows режим сканирования работает иначе. Он никак не связан с выделением. <application>StarDict</application> извлекает расположенный под указателем мыши текст, когда перемещение мыши на время приостанавливается. Обычно <application>StarDict</application> выполняет поиск слова, находящегося под указателем. Если указатель расположен не над словом, выполняется поиск находящихся слева и справа от указателя слов. Стоит уточнить, что именно <application>StarDict</application> ищет как слово. <application>StarDict</application> выполняет ряд попыток. Сначала программа рассматривает слово, содержащее любые символы, кроме пробелов и знаков препинания; затем — любое слово, состоящее только из букв; слово из букв в нижнем регистре; слово из букв в верхнем регистре; слово из букв, начинающееся с прописной. В итоге <application>StarDict</application> использует одно из рассмотренных слов для нахождения самой длинной словообразующей приставки. Можно помочь <application>StarDict</application> извлечь правильное слово или часть слова, выполнив выделение. Хотя <application>StarDict</application> не работает с выделенными фрагментами, такое выделение может повлиять на результаты поиска с помощью <application>StarDict</application>.</para>
+	<para>В Windows сканирование может не работать в некоторых приложениях. Например, известно, что сканирование не работает в <application>FireFox 3.x</application> и <application>Windows Console</application> (процесс cmd.exe). Функция сканирования зависит от того, каким образом приложение выводит текст. Если сканирование не работает, можно воспользоваться другой возможностью <application>StarDict</application> — <firstterm>Сканировать содержимое буфера обмена</firstterm>, см. <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
+	<para>В Windows <application>StarDict</application> особым образом работает с несколькими приложениями. Во-первых, сама программа <application>StarDict</application>. Чтобы выполнить сканирование слова в главном окне <application>StarDict</application>, необходимо выбрать его. Режим сканирования в главном окне <application>StarDict</application> работает точно так, как он должен это делать в общем случае; то, что работа ведётся в Windows, не играет роли. Тем не менее, в других окнах <application>StarDict</application> выполнять сканирование нельзя.</para>
 	
-	<para>
-	Second, there is special plugin to scan in PDF documents, see <xref linkend="stardict-acrobat-plugin"/>.
-	</para>
+	<para>Во-вторых, имеется специальный подключаемый модуль для сканирования в PDF-документах, см. <xref linkend="stardict-acrobat-plugin"/>.</para>
 
     <!-- ==== Figure ==== -->
       <figure id="stardict-float-window-fig"> 
- 	<title><application>StarDict</application> Floating Window</title>
+ 	<title>Всплывающее окно <application>StarDict</application></title>
 	<screenshot> 
 	  <mediaobject> 
 	    <imageobject><imagedata fileref="figures/stardict_float_window.png" format="PNG"/> 
@@ -686,46 +591,35 @@
     <!-- ==== End of Figure ==== -->
 
 	<itemizedlist>
-	<title>Usage tips</title>
+	<title>Советы по использованию</title>
 	<listitem>
-	<para>You may drag the Floating window to move it.</para>
+	<para>Всплывающее окно можно переместить с помощью перетаскивания.</para>
 	</listitem>
 	<listitem>
-	<para>The Floating window will disappear when you move your pointer some distance away.</para>
+	<para>Всплывающее окно исчезает после перемещения указателя мыши на некоторое расстояние от окна.</para>
 	</listitem>
 	<listitem>
-	<para>You may configure <application>StarDict</application> so it will do scanning only when a special modifier key is held down. See <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
+	<para><application>StarDict</application> можно настроить так, чтобы программы выполняла сканирование только при нажатии специальной клавиши-модификатора. См. <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
 	</listitem>
 	<listitem>
-	<para>You may switch the Scan mode on and off by pressing the
-	<keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo>
-	shortcut. See <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
+	<para>Режим сканирования можно включать и отключать путём нажатия комбинации клавиш <keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo>. См. <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
 	</listitem>
 	<listitem>
-	<para><application>StarDict</application> remembers the last text looked up in the Floating window and will not lookup it again.
-	If you need to see the translation again, you should lookup another word first 
-	(it's not enough to simply change selection) and then lookup the original word.
-	Another possibility is to middle-click on the Notification area icon, 
-	<application>StarDict</application> will lookup the selection unconditionally.</para>
+	<para><application>StarDict</application> запоминает последний текст, поиск которого выполнялся во всплывающем окне, и не ищет его снова. Чтобы просмотреть перевод ещё раз, следует сначала выполнить поиск другого слова (недостаточно просто изменить выделение), а затем выполнить поиск исходного слова. Другой вариант — щёлкнуть средней кнопкой мыши по значку в области уведомлений; <application>StarDict</application> выполнит поиск выделенного текста без каких-либо дополнительных условий.</para>
 	</listitem>
 	</itemizedlist>
 	
-	<para>The <application>StarDict</application> Floating window consists of the following elements:</para>
+	<para>Всплывающее окно <guilabel>StarDict</guilabel> содержит следующие элементы:</para>
 	<variablelist>
 		<varlistentry>
-		<term>Tool buttons bar</term>
+		<term>Панель кнопок инструментов</term>
 		<listitem>
-		<para>A bar at the top of the Floating window. The bar will be hidden automatically to save display space. When your mouse pointer enters the Floating window, 
-		the Tool buttons bar will appear immediately, and disappear again as the mouse pointer leaves. </para>
-		<para>You can click these buttons to <guibutton>query</guibutton> a word in the Main window,
-        <guibutton>copy</guibutton> the query result to clipboard, 
-		<guibutton>pronounce</guibutton> the word, <guibutton>stop</guibutton> selection scanning, etc. 
-		To the far right is the <guibutton>Lock floating window</guibutton> button.  If the 
-		Floating window is locked, it will always be shown there. </para>
+		<para>Панель, расположенная в верхней части всплывающего окна. Она автоматически скрывается в целях экономии пространства для отображения. Когда указатель мыши наводится на всплывающее окно, панель кнопок инструментов немедленно появляется, а при прекращении наведения — скрывается вновь.</para>
+		<para>Эти кнопки могут использоваться для <guibutton>поиска</guibutton> слова в главном окне, <guibutton>копирования</guibutton> результата поиска в буфер обмена, <guibutton>произнесения</guibutton> слова, <guibutton>отключения</guibutton> сканирования выделенного и так далее. Самая правая кнопка — <guibutton>Закрепить всплывающее окно</guibutton>. Если всплывающее окно закреплено, оно всегда будет отображаться в этом месте.</para>
 		</listitem>
 		</varlistentry>
 		<varlistentry>
-		<term>Область перевода</term>
+		<term>Область определений</term>
 		<listitem>
 		<para>Результаты поиска отображаются в этой области.</para>
 		</listitem>
@@ -735,36 +629,26 @@
 	</sect2>
 	
 	<sect2 id="stardict-acrobat-plugin">
-	<title>WordPick Adobe Acrobat plugin</title>
-	<para><application>StarDict</application> includes an Abode Acrobat plugin that can be used to extract and translate text from Portable Document Format (PDF) documents. The WordPick plugin is available in Windows edition of <application>StarDict</application> only. The main text extration mechanism does not work with PDF documents in Windows.
-	</para>
+	<title>Модуль WordPick Adobe Acrobat</title>
+	<para><application>StarDict</application> включает модуль Abode Acrobat, который можно использовать для извлечения и перевода текста из документов в формате PDF. Модуль WordPick доступен только в версии <application>StarDict</application> для Windows. Основной механизм извлечения текста не работает с PDF-документами в Windows.</para>
 
 	<note>
-	<title>Limitations</title>
-	<para>
-	WordPick plugin requires non-free edition of Acrobat like Acrobat Stardard, Pro or richer, 
-	it does not work with the free Acrobat Reader product. 
-	The plugin is know to work with versions 7-9 of Acrobat. 
-	PDF document security restrictions must allow extracting document content.
-	</para>
+	<title>Ограничения</title>
+	<para>Для работы модуля WordPick необходимо установить платное издание Acrobat (Acrobat Stardard, Pro или издание с большим количеством функций); модуль не будет работать с бесплатным продуктом Acrobat Reader. Модуль совместим с версиями 7-9 Acrobat. Параметры безопасности, установленные для PDF-документов, должны разрешать извлечение содержимого этих документов.</para>
 	</note>
 	
-	<para>WordPick plugin embeds an icon into the stardard Acrobat toolbar near the Hand Tool.
-	In Acrobat Reader you will not see that icon ‒ plugin is not available.
-	If the current document does not allow for text extraction, the icon is disabled, 
-	the plugin is not operational.
-	</para>
+	<para>Модуль WordPick добавляет на стандартную панель инструментов Acrobat значок (рядом с инструментом «Рука»). В Acrobat Reader этот значок не появится — модуль не поддерживается. Если для текущего документа запрещено извлечение текста, значок будет неактивным; модуль не будет работать.</para>
 
 	<!-- ==== Figure ==== -->
 	<figure id="stardict-acrobat-toolbar-fig"> 
-	<title>Adobe Acrobat Toolbar with WordPick plugin icon</title>
+	<title>Панель инструментов Adobe Acrobat со значком модуля WordPick</title>
 	<screenshot>
 		<mediaobject>
 		<imageobject>
 			<imagedata fileref="figures/acrobat_toolbar.png" format="PNG"/>
 		</imageobject>
 		<textobject>
-			<phrase>Shows Adobe Acrobat Toolbar with WordPick plugin icon.</phrase>
+			<phrase>Показывает панель инструментов Adobe Acrobat со значком модуля WordPick.</phrase>
 		</textobject>
 		</mediaobject>
 	</screenshot>
@@ -772,59 +656,41 @@
 	<!-- ==== End of Figure ==== -->
 
 	<tip>
-	<title>How to inspect document security permissions</title>
-	<para>
-	In the main menu open <guimenu>File</guimenu>, <guimenuitem>Document properties</guimenuitem>.
-	<guilabel>Document properties</guilabel> dialog pops up. Proceed to <guilabel>Security</guilabel> tab. Look into <guilabel>Document Restrictions Summary</guilabel> group. <guilabel>Content Copying or Extraction</guilabel> must be allowed.
-	</para>
+	<title>Изучение параметров безопасности документов</title>
+	<para>Воспользуйтесь главным меню: <guimenu>Файл</guimenu>, <guimenuitem>Свойства документа</guimenuitem>. Появится диалоговое окно <guilabel>Свойства документа</guilabel>. Перейдите на вкладку <guilabel>Безопасность</guilabel>. Посмотрите на группу параметров <guilabel>Обзор ограничений документа</guilabel>. <guilabel>Копирование или извлечение содержимого</guilabel> должно быть разрешено.</para>
 	</tip>
 	
 	<orderedlist>
-	<title>Translate text with WordPick plugin</title>
+	<title>Перевод текста с помощью модуля WordPick</title>
 	<listitem>
-	<para>Select WordPick and Select tools. Cursor changes to a vertical bar.
-	Now you can select text with mouse.
-	</para>
+	<para>Выберите инструмент WordPick и инструмент выделения. Курсор превратится в вертикальную полоску. Теперь можно выделить текст с помощью мыши.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Start <application>StarDict</application> if you have not already done that, and enable Scan mode.
-	</para>
+	<para>Запустите <application>StarDict</application>, если программа ещё не запущена, и включите режим сканирования.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Select a word in the PDF document, 
-	<application>StarDict</application> shows the Floating window with translation if the word is found.
-	</para>
+	<para>После выделения слова в PDF-документе <application>StarDict</application> покажет всплывающее окно с переводом, если это слово было найдено.</para>
 	</listitem>
 	
 	</orderedlist>
 	
-	<para>
-	You may select consecutive words and phrases. 
-	If <application>StarDict</application> is unable to find the phrase, it tries to cut words from the end.
-	You will be shown translation of the first word if nothing else has been found.
-	</para>
+	<para>Можно выделять последовательности слов и фраз. Если <application>StarDict</application> не удалось найти указанную фразу, программа попытается убирать слова, начиная с конца. Если больше ничего не удастся найти, будет показан перевод первого слова.</para>
 	
-	<para>Note that the Scan modifier key (<xref linkend="stardict-prefs-dictionary-scan"/>) has no effect in Acrobat.
-	WordPick search for text when you select something in the document regardless of the state of modifiers.
-	To turn off the text translation mode, deselect the WordPick tool on the toolbar, deselecting the Select tool is not necessary.
-	</para>
+	<para>Следует учитывать, что клавиша-модификатор сканирования (<xref linkend="stardict-prefs-dictionary-scan"/>) не работает в Acrobat. WordPick выполняет поиск текста при его выделении в документе независимо от того, нажата ли клавиша-модификатор. Чтобы отключить режим перевода текста, отмените выбор инструмента WordPick на панели инструментов (отменять выбор инструмента выделения необязательно).</para>
 	
 	</sect2>
 
 	<sect2 id="stardict-translation">
-	<title>Full-Text Translation</title>
+	<title>Полнотекстовый перевод</title>
 	
-	<para><application>StarDict</application> provides full-text translation service. It allows you to translate short texts with up to 2000 characters approximately. The exact limit depends on the translation engine and other factors. To switch to Full-Text Translation mode click the <guilabel>Full-Text Translation</guilabel> button on the Left bar in <application>StarDict</application> Main window.
-	</para>
-	<para>
-	<application>StarDict</application> uses online translation services available for free on the Web to perform translation. <application>StarDict</application> collects text, source and target languages, constructs an HTTP request and sends it to online translation service. The application receives response of the service and shows results in a window. You may see <application>StarDict</application> interface to Full-Text Translation service below.
-	</para>
+	<para><application>StarDict</application> позволяет выполнять полнотекстовый перевод. С помощью программы можно переводить короткие тексты (примерно до 2000 символов). Точные цифры зависят от системы перевода и других факторов. Чтобы перейти в режим полнотекстового перевода, нажмите кнопку <guilabel>Полнотекстовый перевод</guilabel> на левой панели в главном окне <application>StarDict</application>.</para>
+	<para>Для выполнения перевода <application>StarDict</application> использует доступные в Интернете бесплатные онлайн-сервисы. <application>StarDict</application> собирает текст, исходный и целевой языки, создаёт HTTP-запрос и  отправляет его онлайн-сервису перевода. Приложение получает ответ сервиса и отображает результат в окне. Ниже показан интерфейс <application>StarDict</application> к сервису полнотекстового перевода.</para>
 	
 	<!-- ==== Figure ==== -->
 	<figure id="stardict-full-text-translation-fig"> 
-	<title>Full-Text Translation Mode</title>
+	<title>Режим полнотекстового перевода</title>
 	<screenshot> 
 		<mediaobject>
 		<imageobject>
@@ -838,13 +704,8 @@
 	</figure>
 	<!-- ==== End of Figure ==== -->
 
-	<para>
-	The top line of the window from left to right contains: engine selection combobox, source language combobox, and target language combobox. Below you see a text area for the text to translate. The bottom part of the window contains a text area for translation results. The <guilabel>Translate</guilabel> button in the middle of the window initiates translation request. The bottom line of the window provides a link to the online translation engine. It opens in a web browser.
-	</para>
-	<para>
-	To translate something, first select a translation engine. You have the following choice: Google, Yahoo, Excite Japan. Select source and target languages. Available source and target languages depend on selected engine. Available target languages depend on source language as well.
-	Type the text to translate into the source text area. Click the <guilabel>Translate</guilabel> button to start translation. You'll see results in the result text area. Sometimes it may show you <guilabel>Not found!</guilabel> text. It means that translation failed. There can be a number of reasons: source text is too long, the online service is down, the service has changed output format and <application>StarDict</application> is unable to parse it. You may see other errors in the results area.
-	</para>
+	<para>Верхняя строка окна содержит (слева направо): поле со списком для выбора системы перевода, поле со списком для выбора исходного языка и поле со списком для выбора целевого языка. Под ней располагается область для переводимого текста. Нижняя часть окна содержит область для показа результата перевода. Кнопка <guilabel>Перевести</guilabel> в середине окна отправляет запрос на перевод. В нижней строке окна находится ссылка на систему онлайн-перевода. Она открывается в веб-браузере.</para>
+	<para>Чтобы выполнить перевод, необходимо сначала выбрать систему перевода. Доступны следующие варианты: Google, Yahoo, Excite Japan. Выберите исходный и целевой языки. Перечень доступных исходных и целевых языков зависит от выбранной системы перевода. Доступные целевые языки также зависят от исходного языка. Введите в области исходного текста тот текст, который требуется перевести. Нажмите кнопку <guilabel>Перевести</guilabel> для начала перевода. Результат перевода будет показан в соответствующей области. Иногда там может быть показан текст <guilabel>Не найдено!</guilabel>, означающий, что перевод выполнить не удалось. Это может произойти по ряду причин: превышение допустимой длины исходного текста, неработоспособность онлайн-сервиса, смена формата вывода сервисом (из-за чего <application>StarDict</application> не удалось выполнить синтаксический разбор). В области результата могут быть показаны и другие ошибки.</para>
 	
 	</sect2>
 
@@ -858,205 +719,173 @@
 
     <sect2 id="stardict-usage-lookup">
     	<title>Поиск слова</title>
-    	<para>Для поиска перевода слова, выполните следующие шаги:</para>
+    	<para>Для поиска перевода слова следует выполнить следующие шаги:</para>
     	<orderedlist>
-    		<listitem><para>Type the word that you want to look up in the Search
-    		field.</para></listitem>
-			<listitem><para><application>StarDict</application> немедленно отобразит перевод. Если перевод не найден, можете нажать <keycap>Return</keycap> для выполнения нечёткого запроса или нажать на кнопку <guibutton>Нечёткий запрос</guibutton>.</para></listitem>
-    		<listitem><para>Use the scrollbar to scroll through the definition. Select the words in the Word list to view the 
-			related words. </para></listitem>
+    		<listitem><para>Введите слово, которое требуется найти, в поле поиска.</para></listitem>
+			<listitem><para><application>StarDict</application> немедленно отобразит перевод. Если перевод не найден, можно нажать клавишу <keycap>Return</keycap> для выполнения нечёткого запроса или просто нажать кнопку <guibutton>Нечёткий запрос</guibutton>.</para></listitem>
+    		<listitem><para>Воспользуйтесь полосой прокрутки для перемещения по переводу. Можно выбирать слова в списке слов.</para></listitem>
     	</orderedlist>
     </sect2>
         
     <sect2 id="stardict-usage-clear">
-    	<title>Очистка Области отображения</title>
-    	<para>To clear the text of the Search field, click the <guibutton>Clear</guibutton> button on the 
-		left, or just press <keycap>Alt-C</keycap> or <keycap>ESC</keycap>.</para> 
+    	<title>Очистка области отображения</title>
+    	<para>Чтобы очистить поле поиска, нажмите кнопку <guibutton>Очистить</guibutton>, расположенную слева, или просто нажмите <keycap>Alt-C</keycap> или <keycap>ESC</keycap>.</para> 
     </sect2>
     
     <sect2 id="stardict-usage-select">
-    	<title>Для копирования текста в буфер обмена</title>
-    	<para>There are two ways to copy the text in the Definition area to another application:</para>
+    	<title>Копирование текста в буфер обмена</title>
+    	<para>Есть два способа скопировать текст в области определений в другое приложение:</para>
     	<itemizedlist>
-    		<listitem><para>To copy all of the text, click the <guibutton>Copy</guibutton> button by the top of the <guilabel>Definition area</guilabel>.</para></listitem>
-    		<listitem><para>Для копирования части текста, выделите текст котрый хотите скопировать и нажмите правую кнопку мыши и выберите <guimenuitem>Копировать</guimenuitem>.</para></listitem>
+    		<listitem><para>Чтобы скопировать весь текст, нажмите кнопку <guibutton>Копировать</guibutton>, расположенную над <guilabel>Областью определений</guilabel>.</para></listitem>
+    		<listitem><para>Чтобы скопировать часть текста, выделите её, нажмите правую кнопку мыши и выберите в контекстном меню пункт <guimenuitem>Копировать</guimenuitem>.</para></listitem>
     	</itemizedlist> 
     </sect2>
     
     <sect2 id="stardict-usage-find">
-    	<title>To Find Text in the Definition Area</title>
-    	<para>To find text in the Definition area, perform the following steps:</para>
+    	<title>Поиск текста в области определений</title>
+    	<para>Для поиска текста в области определений следует выполнить следующие шаги:</para>
     	<orderedlist>
-    		<listitem><para>Нажмите кнопку <guibutton>Поиск</guibutton> расположенную над <guilabel>Областью отображения</guilabel>.</para> </listitem>
-    		<listitem><para>Напечатайте слово которое хотите искать в строке запроса <guilabel>Поиск</guilabel>, и нажмите <keycap>Return</keycap>. Вы не можете использовать шаблоны.</para></listitem>
-    		<listitem><para>Для поиска следующего совпадения, нажмите <keycap>Return</keycap> опять.</para></listitem>
+    		<listitem><para>Нажмите кнопку <guibutton>Найти</guibutton>, расположенную над <guilabel>Областью определений</guilabel>.</para> </listitem>
+    		<listitem><para>Введите текст, который следует найти, в текстовом поле <guilabel>Найти</guilabel> и нажмите клавишу <keycap>Return</keycap>. Использовать подстановочные знаки нельзя.</para></listitem>
+    		<listitem><para>Для поиска следующего совпадения нажмите клавишу <keycap>Return</keycap> снова.</para></listitem>
     	</orderedlist>	
     </sect2>
 
 	<sect2 id="stardict-usage-scanning">
-	<title>Scanning: operation guide</title>
+	<title>Сканирование: руководство по эксплуатации</title>
 	
 	<itemizedlist>
 	<listitem>
-	<para>Scenarios below assume that you make selection with mouse.
-	</para>
+	<para>В приведённых далее сценариях предполагается, что выделение выполняется с помощью мыши.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Scan key is the modifier set by the "Scan modifier key" option,
-	see <xref linkend="stardict-prefs-dictionary-scan"/>.
-	</para>
+	<para>Клавиша сканирования — это клавиша-модификатор, заданная с помощью параметра «Клавиша-модификатор сканирования», см. <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
 	</listitem>
 	</itemizedlist>
 	
 	<sect3 id="stardict-usage-scanning-linux">
-	<title>Scanning in Linux and Unix</title>
+	<title>Сканирование в Linux и Unix</title>
 	
 	<orderedlist>
-	<title>Case 1. "Only scan while modifier key is being pressed" option is off</title>
+	<title>Случай 1. Параметр «Сканировать, только если нажата клавиша-модификатор» отключён</title>
 	<listitem>
-	<para>Select text to translate.
-	</para>
+	<para>Выделите текст для перевода.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Wait for a few seconds. The Floating Window pops up.
-	</para>
+	<para>Подождите несколько секунд. Появится всплывающее окно.</para>
 	</listitem>
 	
 	</orderedlist>
 
 	<orderedlist>
-	<title>Case 2. "Only scan while modifier key is being pressed" option is on</title>
+	<title>Случай 2. Параметр «Сканировать, только если нажата клавиша-модификатор» включён</title>
 	<listitem>
-	<para>Press and hold the Scan key.
-	</para>
+	<para>Нажмите и удерживайте клавишу сканирования.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Select the text.
-	</para>
+	<para>Выделите текст.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Wait for a few seconds. The Floating Window pops up.
-	</para>
+	<para>Подождите несколько секунд. Появится всплывающее окно.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Release the Scan key.
-	</para>
+	<para>Отпустите клавишу сканирования.</para>
 	</listitem>
 	
 	</orderedlist>
 	
 	<orderedlist>
-	<title>Case 2.1. "Only scan while modifier key is being pressed" option is on. A variation</title>
+	<title>Случай 2.1. Параметр «Сканировать, только если нажата клавиша-модификатор» включён. Вариант</title>
 	<listitem>
-	<para>Select the text and do not release the mouse button yet.
-	</para>
+	<para>Выделите текст и не отпускайте кнопку мыши.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Press and hold the Scan key.
-	</para>
+	<para>Нажмите и удерживайте клавишу сканирования.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Release the mouse button.
-	</para>
+	<para>Отпустите кнопку мыши.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Wait for a few seconds. The Floating Window pops up.
-	</para>
+	<para>Подождите несколько секунд. Появится всплывающее окно.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Release the Scan key.
-	</para>
+	<para>Отпустите клавишу сканирования.</para>
 	</listitem>
 	
 	</orderedlist>
 	
-	<para>
-	Selection is made when you release mouse button. 
-	This is the time when the Scan key must be pressed down. It takes some time for StarDict to inspect selection, you must hold the Scan key all this time. What is why you need to hold the key for a few seconds after selection.
-	</para>
+	<para>Выделение выполняется при отпускании кнопки мыши. В это время необходимо нажать клавишу сканирования. StarDict требуется некоторое время на анализ выделенного фрагмента, поэтому всё это время (несколько секунд) необходимо удерживать клавишу сканирования нажатой.</para>
 	
 	</sect3>
 	
 	<sect3 id="stardict-usage-scanning-windows">
-	<title>Scanning in Windows</title>
+	<title>Сканирование в Windows</title>
 	
 	<orderedlist>
-	<title>Case 1. "Only scan while modifier key is being pressed" option is off</title>
+	<title>Случай 1. Параметр «Сканировать, только если нажата клавиша-модификатор» отключён</title>
 	<listitem>
-	<para>Place the mouse pointer over the word you want to traslate.
-	</para>
+	<para>Наведите указатель мыши на слово, которое требуется перевести.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Do not move the mouse for a few seconds. The Floating Window pops up.
-	</para>
+	<para>Не перемещайте мышь в течение нескольких секунд. Появится всплывающее окно.</para>
 	</listitem>
 	
 	</orderedlist>
 
 	<orderedlist>
-	<title>Case 2. "Only scan while modifier key is being pressed" option is on</title>
+	<title>Случай 2. Параметр «Сканировать, только если нажата клавиша-модификатор» включён</title>
 	<listitem>
-	<para>Place the mouse pointer over the word you want to traslate.
-	</para>
+	<para>Наведите указатель мыши на слово, которое требуется перевести.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Press and hold the Scan key.
-	</para>
+	<para>Нажмите и удерживайте клавишу сканирования.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Do not move the mouse for a few seconds. The Floating Window pops up.
-	</para>
+	<para>Не перемещайте мышь в течение нескольких секунд. Появится всплывающее окно.</para>
 	</listitem>
 	
 	<listitem>
-	<para>Release the Scan key.
-	</para>
+	<para>Отпустите клавишу сканирования.</para>
 	</listitem>
 	
 	</orderedlist>
 	
-	<para>For scanning in PDF documents see <xref linkend="stardict-acrobat-plugin"/>.
-	</para>
+	<para>Информация о сканировании в PDF-документах: <xref linkend="stardict-acrobat-plugin"/>.</para>
 	
 	</sect3>
 	</sect2>
 	
 	<sect2 id="stardict-usage-scan-mode">
-		<title>Toggle Scan Mode</title>
-		<para>There are a number of ways to enable or disable the Scan selection mode.
-		When in Scan mode, <application>StarDict</application> shows translation of the text you select in different windows. See <xref linkend="stardict-scan-selection"/>.</para>
+		<title>Включение или отключение режима сканирования</title>
+		<para>Существует ряд способов включения или отключения режима сканирования выделенного. В режиме сканирования <application>StarDict</application> показывает перевод текста, выделяемого пользователем в различных окнах. См. <xref linkend="stardict-scan-selection"/>.</para>
 		<itemizedlist>
-		<title>Ways to enable the Scan mode</title>
-		<listitem><para>Toggle the <guilabel>Scan selection</guilabel> checkbox at the bottom left corner of the <application>StarDict</application> Main window.</para></listitem>
-		<listitem><para>Right-click the Notification area icon and check <guimenuitem>Scan</guimenuitem> 
-			in the pop-up menu.</para></listitem>
-		<listitem><para>Press 
-		<keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo>
-		shortcut (it toggles the Scan mode). To configure the shortcut see 
-		<xref linkend="stardict-prefs-dictionary-scan"/>.</para></listitem>
+		<title>Способы включения режима сканирования</title>
+		<listitem><para>Установите флажок <guilabel>Сканирование выделенного</guilabel> в нижнем левом углу главного окна <application>StarDict</application>.</para></listitem>
+		<listitem><para>Щёлкните правой кнопкой мыши по значку в области уведомлений и выберите в появившемся контекстном меню пункт <guimenuitem>Сканировать</guimenuitem>.</para></listitem>
+		<listitem><para>Нажмите комбинацию клавиш <keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo> (она включает или отключает режим сканирования). Для настройки комбинации клавиш см. <xref linkend="stardict-prefs-dictionary-scan"/>.</para></listitem>
 		</itemizedlist>
 	</sect2>
 	
 	<sect2 id="stardict-usage-hotkeys">
-		<title>Main window hotkeys</title>
+		<title>Комбинации клавиш главного окна</title>
 		<variablelist>
 			<varlistentry>
 			<term><keycombo><keycap>Ctrl</keycap><keycap>q</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Quit <application>StarDict</application>.</para>
+			<para>Выйти из <application>StarDict</application>.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1064,7 +893,7 @@
 			<term><keycombo><keycap>Alt</keycap><keycap>x</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Minimize to tray. <application>StarDict</application> Main window is closed, taskbar item disappears, but the application continues to run. You may open the Main window again clicking on the Notification area icon.</para>
+			<para>Свернуть в лоток. Главное окно <application>StarDict</application> закрывается, элемент на панели задач исчезает, но приложение продолжает работать. Главное окно можно открыть снова, щёлкнув по значку в области уведомлений.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1072,7 +901,7 @@
 			<term><keycombo><keycap>Alt</keycap><keycap>z</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Iconify the application. The Main window is hidden, the taskbar item remains.</para>
+			<para>Свернуть приложение. Главное окно скрывается, элемент на панели задач остаётся.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1080,7 +909,7 @@
 			<term><keycombo><keycap>Alt</keycap><keycap>e</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Save word definition to a file. See <xref linkend="stardict-definition-aria-toolbar"/> for more details.</para>
+			<para>Сохранить определение слова в файл. Дополнительная информация: <xref linkend="stardict-definition-aria-toolbar"/>.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1088,7 +917,7 @@
 			<term><keycombo><keycap>F1</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Show help.</para>
+			<para>Показать справку.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1096,31 +925,31 @@
 			<term><keycombo><keycap>Ctrl</keycap><keycap>f</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Search in the Definition area. See <xref linkend="stardict-definition-aria-toolbar"/> for more details.</para>
+			<para>Поиск в области определений. Дополнительная информация: <xref linkend="stardict-definition-aria-toolbar"/>.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><keycombo><keycap>Alt</keycap><keycap>Left</keycap></keycombo>
+			<term><keycombo><keycap>Alt</keycap><keycap>Стрелка «влево»</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Go Back. Return to the word that was queried before.</para>
+			<para>Назад. Возврат к слову, поиск которого был выполнен ранее.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><keycombo><keycap>Alt</keycap><keycap>Up</keycap></keycombo>
+			<term><keycombo><keycap>Alt</keycap><keycap>Стрелка «вверх»</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Previous word. Query the previous word in the Word index.</para>
+			<para>Предыдущее слово. Поиск предыдущего слова в индексе слов.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><keycombo><keycap>Alt</keycap><keycap>Down</keycap></keycombo>
+			<term><keycombo><keycap>Alt</keycap><keycap>Стрелка «вниз»</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Next word. Query the next word in the Word index.</para>
+			<para>Следующее слово. Поиск следующего слова в индексе слов.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1128,7 +957,7 @@
 			<term><keycombo><keycap>Alt</keycap><keycap>m</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Menu. Show the Main menu.</para>
+			<para>Меню. Показать главное меню.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1136,7 +965,7 @@
 			<term><keycombo><keycap>Ctrl</keycap><keycap>v</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Query clipboard text in <application>StarDict</application>.</para>
+			<para>Поиск текста из буфера обмена в <application>StarDict</application>.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1144,7 +973,7 @@
 			<term><keycombo><keycap>Ctrl</keycap><keycap>u</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Clear the Search field and focus it.</para>
+			<para>Очистить поле поиска и перейти в него.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1152,34 +981,33 @@
 			<term><keycombo><keycap>BackSpace</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>The same as <keycombo><keycap>Ctrl</keycap><keycap>u</keycap></keycombo>.</para>
+			<para>Аналогично <keycombo><keycap>Ctrl</keycap><keycap>u</keycap></keycombo>.</para>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><keycombo><keycap>Enter</keycap></keycombo>
+			<term><keycombo><keycap>Ввод</keycap></keycombo>
 			</term>
 			<listitem>
 				<orderedlist>
 				<listitem>
-				<para>The focus is in the Word list.</para>
-				<para>If the selected index item has children, expand or collapse the item.
-				If the selected index item has no children, query the item in the main window.</para>
+				<para>Переход в список слов.</para>
+				<para>Если у выбранного элемента индекса есть дочерние элементы, он будет развёрнут или свёрнут. Если у выбранного элемента индекса нет дочерних элементов, поиск этого элемента будет выполнен в главном окне.</para>
 				</listitem>
 				
 				<listitem>
-				<para>The focus is in the Definition area.</para>
-				<para>Requery the text in the Search field.</para>
+				<para>Переход в область определений.</para>
+				<para>Повторный поиск текста в поле поиска.</para>
 				</listitem>
 				</orderedlist>
 			</listitem>
 			</varlistentry>
 			
 			<varlistentry>
-			<term><keycombo><keycap>Space</keycap></keycombo>
+			<term><keycombo><keycap>Пробел</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Focus the Search field.</para>
+			<para>Переход в поле поиска.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1189,13 +1017,12 @@
 			<listitem>
 				<orderedlist>
 				<listitem>
-				<para>The focus is in Definition area Search bar.</para>
-				<para>Hide the search bar.</para>
+				<para>Переход на панель поиска в области определений.</para>
+				<para>Скрыть панель поиска.</para>
 				</listitem>
 				
 				<listitem>
-				<para>Otherwise, this hotkey has the same effect as 
-				<keycombo><keycap>Ctrl</keycap><keycap>u</keycap></keycombo>.</para>
+				<para>В ином случае эта комбинация клавиш будет работать так же, как <keycombo><keycap>Ctrl</keycap><keycap>u</keycap></keycombo>.</para>
 				</listitem>
 				</orderedlist>
 			</listitem>
@@ -1205,12 +1032,7 @@
 			<term><keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>z</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Open the Main window of <application>StarDict</application>. 
-			The Main window may be iconified, or <application>StarDict</application> may only exist as a Notification area icon.
-			In all the cases pressing this hotkey presents the Main window to the user.
-			You may change the hotkey in the Preferences dialog, see 
-			<xref linkend="stardict-prefs-main-window-options"/>.
-			</para>
+			<para>Открыть главное окно <application>StarDict</application>. Главное окно может быть свёрнуто, или же <application>StarDict</application> может существовать только в виде значка в области уведомлений. Нажатие этой комбинации клавиш в любом случае приведёт к тому, что пользователю будет показано главное окно. Её можно изменить в диалоге настройки, см. <xref linkend="stardict-prefs-main-window-options"/>.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1218,10 +1040,7 @@
 			<term><keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo>
 			</term>
 			<listitem>
-			<para>Toggle the Scan mode.
-			You may change the hotkey in the Preferences dialog, see 
-			<xref linkend="stardict-prefs-dictionary-scan"/>.
-			</para>
+			<para>Переключить режим сканирования. Эту комбинацию клавиш можно изменить в диалоге настройки, см. <xref linkend="stardict-prefs-dictionary-scan"/>.</para>
 			</listitem>
 			</varlistentry>
 			
@@ -1307,72 +1126,56 @@ WineEnRu.ifo</screen>
 <!-- ============= Preferences  ================================ -->
   <sect1 id="stardict-prefs">
 	<title>Настройка</title>
-	<para>To configure <application>StarDict</application>, click the <guibutton>Preferences</guibutton> button at the 
-	right-bottom corner of the Main window or click the <guibutton>Main menu</guibutton> button and choose 
-	<guimenuitem>Preferences</guimenuitem>. </para>
+	<para>Для настройки <application>StarDict</application> нажмите кнопку <guibutton>Настройка</guibutton>, расположенную в правом нижнем углу главного окна, или кнопку <guibutton>Главное меню</guibutton> и выберите пункт <guimenuitem>Настройка</guimenuitem>.</para>
 
 	<sect2 id="stardict-prefs-dictionary">
 	<title>Словарь</title>
 		<sect3 id="stardict-prefs-dictionary-scan">
-		<title>Сканировать выделенное</title>
+		<title>Сканирование выделенного</title>
 			<variablelist>
 				<varlistentry>
 				<term id="stardict-prefs-dictionary-scan-scan-when-modifier">
-					<guilabel>Only scan while modifier key is being pressed.</guilabel> </term>
+					<guilabel>Сканировать, только если нажата клавиша-модификатор</guilabel> </term>
 				<listitem>
-				<para>Only do scanning while the modifier key being pressed. The modifier key is set 
-				by the <xref linkend="stardict-prefs-dictionary-scan" endterm="stardict-prefs-dictionary-scan-scan-key"/> option.</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Сканировать только при нажатии клавиши-модификатора. Модификатор задаётся параметром <xref linkend="stardict-prefs-dictionary-scan" endterm="stardict-prefs-dictionary-scan-scan-key"/>.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 			
 				<varlistentry>
 				<term id="stardict-prefs-dictionary-scan-hide-when-modifier-released">
-					<guilabel>Hide floating window when modifier key released.</guilabel></term>
+					<guilabel>Скрывать всплывающее окно, когда клавиша-модификатор отпущена</guilabel></term>
 				<listitem>
-				<para>When this option is set, the Floating window is hidden when user releases the modifier key.
-				Note: the window is hidden only if the pointer has the same position it had when the window was shown.
-				In addition to hiding the window, the last selected text is forgotten, which allow you to lookup
-				the same text again simply pressing the modifier key.
-				When this option is not set, releasing the modifier key has no effect on the Floating window.
-				</para>
-				<para>This option has effect only if <xref linkend="stardict-prefs-dictionary-scan" endterm="stardict-prefs-dictionary-scan-scan-when-modifier"/>
-				is checked.</para>
+				<para>Если этот параметр включён, всплывающее окно скрывается, когда пользователь отпускает клавишу-модификатор. Примечание: окно скрывается только в том случае, если указатель мыши находится в том же положении, что и во время показа окна. Программа не только скрывает окно, но и забывает последний выделенный текст; это позволяет повторить его поиск путём нажатия клавиши-модификатора. Если этот параметр отключён, отпускание клавиши-модификатора не влияет на всплывающее окно.</para>
+				<para>Этот параметр работает только в том случае, если установлен флажок <xref linkend="stardict-prefs-dictionary-scan" endterm="stardict-prefs-dictionary-scan-scan-when-modifier"/>.</para>
 				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term id="stardict-prefs-dictionary-scan-scan-key"><guilabel>Scan modifier key</guilabel></term>
+				<term id="stardict-prefs-dictionary-scan-scan-key"><guilabel>Клавиша-модификатор сканирования</guilabel></term>
 				<listitem>
-				<para>This option allows to choose a modifier keys or a key combination that enables scanning.</para>
-				<para>This option has effect only if <xref linkend="stardict-prefs-dictionary-scan" endterm="stardict-prefs-dictionary-scan-scan-when-modifier"/>
-				is checked.</para>
-				<para>Default key: <keycap>Win</keycap> (depends on <application>StarDict</application> edition).</para>
+				<para>Этот параметр позволяет выбрать клавишу-модификатор или комбинацию клавиш для включения сканирования.</para>
+				<para>Этот параметр работает только в том случае, если установлен флажок <xref linkend="stardict-prefs-dictionary-scan" endterm="stardict-prefs-dictionary-scan-scan-when-modifier"/>.</para>
+				<para>Клавиша по умолчанию: <keycap>Win</keycap> (зависит от версии <application>StarDict</application>).</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term id="stardict-prefs-dictionary-scan-scan-clipboard"><guilabel>Scan clipboard.</guilabel></term>
+				<term id="stardict-prefs-dictionary-scan-scan-clipboard"><guilabel>Сканировать содержимое буфера обмена</guilabel></term>
 				<listitem>
-				<para>Enables Clipboard scanning. If enabled, when new text is copied into the clipboard,
-				<application>StarDict</application> lookup the text into the Floating window.</para>
-				<para>This option is only available in <emphasis>Windows edition</emphasis> of <application>StarDict</application>.</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Включает сканирование содержимого буфера обмена. Если флажок установлен, при копировании нового текста в буфер обмена <application>StarDict</application> будет выполнять поиск этого текста во всплывающем окне.</para>
+				<para>Этот параметр доступен только в <emphasis>Windows-версии</emphasis> <application>StarDict</application>.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term>Scan mode shortcut</term>
+				<term>Комбинация клавиш режима сканирования</term>
 				<listitem>
-				<para>The Scan mode shortcut enables or disables the Scan mode.
-				Check the <guilabel>Use scan hotkey</guilabel> checkbox to enable this shortcut.
-				You may change the shortcut in the field to the right of the label.
-				Click inside the field and press the key combination you want to assign to this action.</para>
-				<para>Default: TRUE</para>
-				<para>Default shortcut: 
-				<keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo>.
-				</para>
+				<para>Комбинация клавиш режима сканирования включает или отключает этот режим. Для её использования необходимо установить флажок <guilabel>Использовать комбинацию клавиш для включения или отключения сканирования</guilabel>. Её можно изменить в поле, расположенном справа от названия флажка. Щёлкните в пределах поля и нажмите ту комбинацию клавиш, которую следует назначить.</para>
+				<para>По умолчанию: включено.</para>
+				<para>Комбинация клавиш по умолчанию: <keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>x</keycap></keycombo>.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
@@ -1381,169 +1184,110 @@ WineEnRu.ifo</screen>
 		<title>Шрифт</title>	
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Использовать свой шрифт.</guilabel> </term>
+				<term><guilabel>Использовать свой шрифт</guilabel> </term>
 				<listitem>
-				<para>Allows you to override the system's default for <application>StarDict</application>.
-				If this option is turned on, the font selelected in the <guilabel>Dictionary font</guilabel> option will be
-				used instead of the system font.</para>
-				<para>Font settings apply immediately.</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Позволяет переопределить системный шрифт по умолчанию для <application>StarDict</application>. Если этот параметр включён, вместо системного шрифта будет использоваться шрифт, заданный с помощью параметра <guilabel>Шрифт словаря</guilabel>.</para>
+				<para>Параметры шрифта применяются сразу же.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
 		</sect3>
 		<sect3 id="stardict-prefs-dictionary-cache">
-		<title>Cache</title>
+		<title>Кэш</title>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel id="stardict-prefs-dictionary-scan-create-cache-files">Create cache files to speed up loading.</guilabel></term>
+				<term><guilabel id="stardict-prefs-dictionary-scan-create-cache-files">Создать файлы кэша для ускорения загрузки.</guilabel></term>
 				<listitem>
-				<para>Opening a dictionary the first time, <application>StarDict</application> does some calculations
-				to access dictionary contents speedily. 
-				<application>StarDict</application> may save the results in special cache files that will be used the next time
-				<application>StarDict</application> starts. With cache files <application>StarDict</application> starts quicker, since it does not need to do
-				the same calculations again. It's highly recommended to enable caching.
-				In the first place, <application>StarDict</application> tries to save a cache file along with the dictionary.
-				If it fails, for example, because the directory is write-protected,
-				<application>StarDict</application> creates a file under the user home directory, in <application>StarDict</application>'s directory.</para>
+				<para>Когда словарь отрывается в первый раз, <application>StarDict</application> выполняет некоторые вычисления для ускорения доступа к его содержимому. <application>StarDict</application> может сохранить результаты в специальных файлах кэша, которые будут использоваться при следующем запуске <application>StarDict</application>. Благодаря файлам кэша запуск <application>StarDict</application> выполняется быстрее, так как программе не нужно снова выполнять те же самые вычисления. Настоятельно рекомендуется включить функцию кэширования. Сначала <application>StarDict</application> попытается сохранить файл кэша вместе со словарём. Если это не получится сделать (например, из-за того, что каталог защищён от записи), <application>StarDict</application> создаст файл в домашнем каталоге пользователя, в каталоге <application>StarDict</application>.</para>
 				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel id="stardict-prefs-dictionary-scan-use-collation">Sort word list by collation function.</guilabel></term>
+				<term><guilabel id="stardict-prefs-dictionary-scan-use-collation">Сортировать список слов с помощью функции сравнения</guilabel></term>
 				<listitem>
-				<para>Normally, <application>StarDict</application> uses an index of words to look up a word in a dictionary.
-				When the word is present in the index, the corresponding article is shown.
-				Otherwise adjacent words will be checked and may be used as result.
-				<application>StarDict</application> uses heuristic algorithms to decide whether the particular word may be suggested as
-				result of the search or not.
-				The order of words in an index is very important and
-				it would be handy if index items were sorted by alphabet or according to other rules.
-				Collation functions allows you to specify a number of predefined sorting orders,
-				that may be helpful when working with particular languages.
-				</para>
-				<para>
-				To use a collation function check the
-				<guilabel>Sort word list by collation function</guilabel>
-				checkbox and select the desired function from the
-				<guilabel>Collation function</guilabel> list.
-				The collation function will be applied as soon as you close the Preferences dialog.
-				It may take a considerable amount of time to apply the new collation function,
-				please, be patient.
-				</para>
-				<para>It's highly recommended to enable the 
-				<xref linkend="stardict-prefs-dictionary-cache" endterm="stardict-prefs-dictionary-scan-create-cache-files"/>
-				option, otherwise <application>StarDict</application> will do sorting each time the application starts.
-				</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Обычно <application>StarDict</application> использует индекс слов для поиска слова в словаре. Когда слово имеется в индексе, показывается соответствующая статья. В ином случае проверяются соседние слова, они могут быть использованы в качестве результата. <application>StarDict</application> использует эвристические алгоритмы для принятия решения о том, можно ли предложить определённое слово в качестве результата поиска. Порядок слов в индексе очень важен; полезна упорядоченность элементов индекса по алфавиту или в соответствии с другими правилами. Функции сравнения позволяют указать ряд предустановленных порядков сортировки, что может быть полезным при работе с определёнными языками.</para>
+				<para>Чтобы использовать функцию сравнения, установите флажок <guilabel>Сортировать список слов с помощью функции сравнения</guilabel> и выберите нужную функцию в списке <guilabel>Функция сравнения</guilabel>. Функция сравнения будет применена сразу после закрытия диалогового окна настройки. Будьте готовы к тому, что на применение новой функции сравнения может потребоваться достаточно много времени.</para>
+				<para>Настоятельно рекомендуется включить параметр <xref linkend="stardict-prefs-dictionary-cache" endterm="stardict-prefs-dictionary-scan-create-cache-files"/>, чтобы <application>StarDict</application> не приходилось выполнять сортировку при каждом запуске программы.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Clean all cache files</guilabel></term>
+				<term><guilabel>Очистить кэш</guilabel></term>
 				<listitem>
-				<para>Remove all <application>StarDict</application> cache files.
-				</para>
+				<para>Удалить все файлы кэша <application>StarDict</application>.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
 		</sect3>
 		<sect3 id="stardict-prefs-dictionary-export">
-		<title>Export</title>
-			<para><application>StarDict</application> may export search results into a file.
-			You have two options: export only the found word or export the entire search result, the contents of the Definition area.
-			</para>
+		<title>Экспорт</title>
+			<para><application>StarDict</application> может экспортировать результаты поиска в файл. Есть два варианта: экспортировать только найденное слово или экспортировать результат поиска целиком (т.е. всё содержимое области определений).</para>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Only export words.</guilabel></term>
+				<term><guilabel>Экспортировать только слова</guilabel></term>
 				<listitem>
-				<para>When this option is set, <application>StarDict</application> exports only the found word,
-				otherwise exports the complete article.</para>
+				<para>Если этот параметр включён, <application>StarDict</application> выполняет экспорт только найденного слова, в ином случае — экспорт всей статьи.</para>
 				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guilabel>File name</guilabel></term>
+				<term><guilabel>Имя файла</guilabel></term>
 				<listitem>
-				<para>
-				Name of the file where to export data.
-				</para>
+				<para>Имя файла, в который следует экспортировать данные.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
 		</sect3>
 		<sect3 id="stardict-prefs-dictionary-sound">
 		<title>Звук</title>
-			<para>There are a number of cases when <application>StarDict</application> needs to play sound files.
-			<application>StarDict</application> may accompany GUI actions with sounds.
-			<application>StarDict</application> may pronounce the words you search in the dictionary.
-			Some articles may contain linked sound files you can play.
-			</para>
-			<para>
-			To play sound files <application>StarDict</application> may harness platform-specific services or use commands you specify on this page.
-			</para>
-			<para>
-			This page allows to configure some aspects of the TTS subsystem.
-			The TTS subsystem is used to pronounce words by computer.
-			</para>
+			<para>В ряде случаев <application>StarDict</application> требуется воспроизводить звуковые файлы. <application>StarDict</application> может сопровождать звуками действия в графическом интерфейсе пользователя. <application>StarDict</application> может произносить слова, поиск которых выполняется в словаре. Некоторые статьи могут содержать ссылки на звуковые файлы — их можно воспроизводить.</para>
+			<para>Для воспроизведения звуковых файлов <application>StarDict</application> может задействовать заданные платформой службы или же использовать команды, которые указаны пользователем на этой странице.</para>
+			<para>На этой странице можно настроить некоторые параметры подсистемы синтеза речи. Она используется для произнесения слов компьютером.</para>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Использовать звуки для событий.</guilabel> </term>
+				<term><guilabel>Использовать звуки для событий</guilabel> </term>
 				<listitem>
-				<para>Whether to enable sound events. <application>StarDict</application> will play sound event when button is 
-	active, released, and when a menu pops up.</para>
+				<para>Следует ли включить звуки для событий. <application>StarDict</application> будет воспроизводить звуки при использовании кнопок и появлении меню.</para>
 				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Command for playing sound files:</guilabel></term>
+				<term><guilabel>Команда для воспроизведения звуковых файлов</guilabel></term>
 				<listitem>
-				<para>Specifies a command for playing sound files.
-				You may specify a program name (with or without full path) accompaned with any options required. The file name to play will be appended to this command at run time.
-				</para>
+				<para>Указывает команду для воспроизведения звуковых файлов. Можно указать имя программы (с полным путём или без него) и любые необходимые параметры. Имя файла для воспроизведения будет добавлено к этой команде во время выполнения.</para>
 				</listitem>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guilabel>Always use sound play command</guilabel></term>
+				<term><guilabel>Всегда использовать команду воспроизведения звуков</guilabel></term>
 				<listitem>
-				<para>On some platforms <application>StarDict</application> use platform-specific services to play sound files first, then retreats to the custom command provided by the user if the service is unable to play the file. You may specify to always use the custom command selecting this option.
-				</para>
-				<para>По умолчанию: выключено.</para>
+				<para>На некоторых платформах <application>StarDict</application> сначала задействует заданные ими службы для воспроизведения звуковых файлов, а затем (если службе не удалось воспроизвести файл) использует предоставленную пользователем команду. Установка этого флажка позволяет указать программе, что следует всегда использовать пользовательскую команду.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guilabel>RealPeopleTTS search path:</guilabel></term>
+				<term><guilabel>Каталоги со звуковыми файлами произношений слов:</guilabel></term>
 				<listitem>
-				<para>
-				Allows to specify locations of RealPeopleTTS bundles.
-				RealPeopleTTS bundle is a collection of sound files containing speech samples performed by real people. Normally, one file contains one recoded word, the file is named after that word. Sound files are organized into a number of directories. In the text field you must specify a path to the top level directory of the bundle. The order of paths in the text field is important. <application>StarDict</application> checks directories from top to bottom, the first found file will be used.
-				</para>
+				<para>Позволяет указать каталоги с наборами файлов произношений слов. Эти звуковые файлы содержат образцы речи, начитанные реальными людьми. Обычно в одном файле записано одно слово, при этом название файла совпадает с ним. Звуковые файлы распределены по каталогам. В поле ввода необходимо указать путь к каталогу верхнего уровня. Порядок указания путей в поле ввода имеет значение. <application>StarDict</application> проверяет каталоги сверху вниз, используется первый найденный файл.</para>
 					<variablelist>
-						<title>Default:</title>
+						<title>По умолчанию</title>
 						<varlistentry>
-						<term>In Windows edition of <application>StarDict</application></term>
+						<term>В версии <application>StarDict</application> для Windows</term>
 						<listitem>
-						<para>
-						<filename class="directory">C:\Program Files\WyabdcRealPeopleTTS</filename>,
-						<filename class="directory">C:\Program Files\OtdRealPeopleTTS</filename>,
-						<filename class="directory">WyabdcRealPeopleTTS</filename>,
-						<filename class="directory">OtdRealPeopleTTS</filename>
-						</para>
+						<para><filename class="directory">C:\Program Files\WyabdcRealPeopleTTS</filename>, <filename class="directory">C:\Program Files\OtdRealPeopleTTS</filename>, <filename class="directory">WyabdcRealPeopleTTS</filename>, <filename class="directory">OtdRealPeopleTTS</filename></para>
 						</listitem>
 						</varlistentry>
 
 						<varlistentry>
-						<term>In other editions of <application>StarDict</application></term>
+						<term>В других версиях <application>StarDict</application></term>
 						<listitem>
-						<para>
-						<filename class="directory">/usr/share/WyabdcRealPeopleTTS</filename>,
-						<filename class="directory">/usr/share/OtdRealPeopleTTS</filename>
-						</para>
+						<para><filename class="directory">/usr/share/WyabdcRealPeopleTTS</filename>, <filename class="directory">/usr/share/OtdRealPeopleTTS</filename></para>
 						</listitem>
 						</varlistentry>
 					</variablelist>
@@ -1551,26 +1295,18 @@ WineEnRu.ifo</screen>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guilabel>Enable TTS program.</guilabel></term>
+				<term><guilabel>Использовать программу синтеза речи</guilabel></term>
 				<listitem>
-				<para>
-				Allows to use the command below to read words.
-				You need to restart <application>StarDict</application> for changes to take effect.
-				</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Разрешает использовать указанную ниже команду для чтения слов. Чтобы изменения вступили в силу, необходимо перезапустить <application>StarDict</application>.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term>TTS <guilabel>Command line:</guilabel></term>
+				<term><guilabel>Команда</guilabel></term>
 				<listitem>
-				<para>
-				This field allows to specify a command to use to pronounce words.
-				You need to provide a print-like string, with "%s" specifing the place where the word (or phrase) to pronounce will be inserted.
-				You need to restart <application>StarDict</application> for changes to take effect.
-				Do not forget to check the checkbox above if you want to use this command.
-				</para>
-				<para>Default: <emphasis>nothing</emphasis>.</para>
+				<para>В этом поле можно указать команду, которую следует использовать для произнесения слов. Необходимо предоставить строку, где «%s» указывает место для вставки произносимого слова (или фразы). Чтобы изменения вступили в силу, необходимо перезапустить <application>StarDict</application>. Не забудьте установить флажок выше, если требуется использовать эту команду.</para>
+				<para>По умолчанию: <emphasis>ничего</emphasis>.</para>
 				</listitem>
 				</varlistentry>
 				
@@ -1578,32 +1314,25 @@ WineEnRu.ifo</screen>
 		</sect3>
 		
 		<sect3 id="stardict-prefs-dictionary-video">
-			<title>Video</title>
+			<title>Видео</title>
 			<variablelist>
 			<varlistentry>
-			<term><guilabel>Command for playing video files:</guilabel></term>
+			<term><guilabel>Команда для воспроизведения видеофайлов</guilabel></term>
 			<listitem>
-				<para>
-				Specifies a command for playing video files.
-				You may specify a program name (with or without full path) accompaned with any options required. The file name to play will be appended to this command at run time.
-				Video files may be linked with dictionary articles.
-				</para>
+				<para>Указывает команду для воспроизведения видеофайлов. Можно указать имя программы (с полным путём или без него) и любые необходимые параметры. Имя файла для воспроизведения можно добавить к команде во время выполнения. Видеофайлы могут быть связаны со словарными статьями.</para>
 			</listitem>
 			</varlistentry>
 			</variablelist>
 		</sect3>
 		
 		<sect3 id="stardict-prefs-dictionary-article-rendering">
-			<title>Article rendering</title>
+			<title>Отображение словарной статьи</title>
 			<variablelist>
 			<varlistentry>
-			<term><guilabel>Highlight search term</guilabel></term>
+			<term><guilabel>Выделять поисковый запрос</guilabel></term>
 			<listitem>
-				<para>
-				Whether to highlight the search term in the Definition area.
-				A search term is a word that was found in dictionaries, a head word of an article.
-				</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Следует ли выделять поисковый запрос в области определений. Поисковый запрос — это слово, которое было найдено в словарях, заглавное слово статьи.</para>
+				<para>По умолчанию: отключено.</para>
 			</listitem>
 			</varlistentry>
 			</variablelist>
@@ -1647,12 +1376,10 @@ WineEnRu.ifo</screen>
 	</sect2>
 
 	<sect2 id="stardict-prefs-network">
-	<title>Network</title>
+	<title>Сеть</title>
 		<sect3 id="stardict-prefs-network-net-dict">
-		<title>Net Dict</title>
-		<para><application>StarDict</application> may look up words in network dictionaries using a custom <application>StarDict</application> network protocol.
-		This configuration page allows you to register an account, select a server to use, and specify other related parameters. 
-		</para>
+		<title>Сетевые словари</title>
+		<para><application>StarDict</application> может искать слова в сетевых словарях с помощью настраиваемого сетевого протокола <application>StarDict</application>. На этой странице настройки можно зарегистрировать учётную запись, выбрать сервер для использования и указать другие связанные параметры.</para>
 		<para>
 		At the present time <application>StarDict</application> may be configured to query only one server. When network dictionaries are enabled, each time you ask <application>StarDict</application> to lookup a word or phrase, the application sends a request to the configured server. Note that network dictionaries are enabled globally, they are used in both Main and Floating windows, they do not depend on the dictionary group selected.
 		</para>
@@ -1669,45 +1396,34 @@ WineEnRu.ifo</screen>
 		</caution>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Enable network dictionaries</guilabel></term>
+				<term><guilabel>Включить сетевые словари</guilabel></term>
 				<listitem>
 				<para>Enables network dictionaries.
 				</para>
-				<para>По умолчанию: выключено.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
 		</sect3>
 		<sect3 id="stardict-prefs-network-web-browser">
-		<title>Web browser</title>
-		<para>
-		<application>StarDict</application> may need to open a web link to start Internet search, show <application>StarDict</application> project website, show a web page to download new dictionaries, new version of the application and for other reasons. This configuration page allows to specify how a web link should be opened.
-		</para>
+		<title>Веб-браузер</title>
+		<para><application>StarDict</application> может потребоваться открыть веб-ссылку, чтобы начать поиск в Интернете, показать веб-сайт проекта <application>StarDict</application>, показать веб-страницу для загрузки новых словарей или новой версии приложения и так далее. На этой странице настройки можно указать способ открытия веб-ссылки.</para>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Command for opening URLs</guilabel></term>
+				<term><guilabel>Команда для открытия URL-адресов</guilabel></term>
 				<listitem>
-				<para>
-				This option allows you to specify a command to use for opening <acronym>URL</acronym>s.
-				Some editions of <application>StarDict</application> use platform-specific services for opening <acronym>URL</acronym>s by default. To use the custom command you need to check the checkbox below. For other editions of <application>StarDict</application> the custom command is the only way to open a web link.
-				</para>
-				<para>
-				You may specify a program name (with or without full path) accompaned with any options required. The <acronym>URL</acronym> to open will be appended to this command at run time.
-				</para>
-				<para>Default: <command>firefox</command> (depends on edition).</para>
+				<para>С помощью этого параметра можно указать команду для открытия <acronym>URL-адресов</acronym>. Некоторые версии <application>StarDict</application> по умолчанию задействуют заданные платформами службы для открытия <acronym>URL-адресов</acronym>. Чтобы использовать пользовательскую команду, необходимо установить расположенный ниже флажок. В других версиях <application>StarDict</application> открыть веб-ссылку можно только с помощью пользовательской команды.</para>
+				<para>Можно указать имя программы (с полным путём или без него) и любые необходимые параметры. <acronym>URL-адрес</acronym> для открытия будет добавлен к этой команде во время выполнения.</para>
+				<para>По умолчанию: <command>firefox</command> (зависит от версии).</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Always use this command for opening URLs.</guilabel></term>
+				<term><guilabel>Всегда использовать эту команду для открытия URL-адресов</guilabel></term>
 				<listitem>
-				<para>
-				This option is only available in editions of <application>StarDict</application> that can use other ways to open a web link.
-				</para>
-				<para>
-				Check this option to use the custom command to open web links instead of platform-specific services.
-				</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Этот параметр доступен только в тех версиях <application>StarDict</application>, которые поддерживают другие способы открытия веб-ссылки.</para>
+				<para>Установите этот флажок, чтобы использовать для открытия веб-ссылок пользовательскую команду, а не заданные платформами службы.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
@@ -1717,149 +1433,98 @@ WineEnRu.ifo</screen>
 	<sect2 id="stardict-prefs-main-window">
 	<title>Главное окно</title>
 		<sect3 id="stardict-prefs-main-window-input">
-		<title>Input</title>
+		<title>Ввод</title>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Search while typing</guilabel></term>
+				<term><guilabel>Искать во время набора</guilabel></term>
 				<listitem>
 				<para>
 				When this option is checked, <application>StarDict</application> search for the word you are typing in the search field automatically. <application>StarDict</application> monitors key-press events, it starts searching the word entered as soon as there is no activity for more than a specified amount of time. The time span can be changed in the field below. If the time span is 0, search is started immediately after you change the search field.
 				</para>
-				<para>
-				When this option is not checked, you need to press 
-				<keycombo><keycap>Enter</keycap></keycombo>
-				in order for <application>StarDict</application> to start searching the word.
-				</para>
-				<para>Default: TRUE</para>
+				<para>Если этот флажок не установлен, потребуется нажать клавишу <keycombo><keycap>Ввод</keycap></keycombo>, чтобы программа <application>StarDict</application> начала поиск слова.</para>
+				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
 
 				<varlistentry>
-				<term><guilabel>Word change timeout</guilabel></term>
+				<term><guilabel>Время ожидания после изменения слова</guilabel></term>
 				<listitem>
-				<para>
-				A word change timeout in milliseconds. See the option above for details.
-				</para>
-				<para>Default: 300 ms</para>
+				<para>Время ожидания после изменения слова в миллисекундах. Подробные сведения доступны в приведённом выше описании параметра.</para>
+				<para>По умолчанию: 320 мс</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Show the first word when not found.</guilabel></term>
+				<term><guilabel>Показывать первое слово, когда ничего не найдено</guilabel></term>
 				<listitem>
-				<para>
-				When <application>StarDict</application> is unable to find the exact word requested, the application may propose another word that is close to the original. When this option is checked, the closest word will be shown in the Definition area, otherwise, <application>StarDict</application> tells that the original word is not found. Note, that this option applies to simple queries only, that is the queries that do not use regular expressions, patterns, fuzzy matchs and so on.
-				</para>
-				<para>Default: TRUE</para>
+				<para>Когда <application>StarDict</application> не удаётся найти точное соответствие запрошенному слову, приложение может предложить другое слово, близкое к исходному. Если этот флажок установлен, самое близкое слово будет показано в области определений. В ином случае <application>StarDict</application> сообщит о том, что исходное слово не найдено. Обратите внимание, этот параметр применяется только к простым запросам (тем, где не используются регулярные выражения, шаблоны, нечёткие совпадения и т.д.).</para>
+				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
 		</sect3>
 		
 		<sect3 id="stardict-prefs-main-window-options">
-		<title>Опции</title>
+		<title>Параметры</title>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Skin</guilabel></term>
+				<term><guilabel>Стиль</guilabel></term>
 				<listitem>
-				<para>
-				Allows to customize graphical appearance of the application.
-				Select the <emphasis>Default</emphasis> item to restore the original appearance of <application>StarDict</application>,
-				no skins applied.
-				You need to restart the application in order for changes to take effect.
-				For instructions on how to prepare a custom skin see the <filename>doc/Skins</filename> file in <application>StarDict</application> sources.
-				</para>
-				<para>Default: <emphasis>Default</emphasis>.</para>
+				<para>Позволяет настроить графический вид приложения. Выберите пункт <emphasis>По умолчанию</emphasis> для восстановления исходного внешнего вида <application>StarDict</application> (без применения стиля). Чтобы изменения вступили в силу, необходимо перезапустить приложение. Инструкции по подготовке пользовательского стиля доступны в исходных файлах <application>StarDict</application> (файл <filename>doc/Skins</filename>).</para>
+				<para>По умолчанию: <emphasis>По умолчанию</emphasis>.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Прятать главное окно при запуске StarDict.</guilabel></term>
+				<term><guilabel>Скрывать главное окно при запуске StarDict</guilabel></term>
 				<listitem>
-				<para>Controls whether the Main window appears when you first start the program.
-                If you select this option, you will only see the Notification area icon
-				after starting <application>StarDict</application>.  You may still get to the Main
-                window by clicking on this icon.</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Управляет тем, появляется ли главное окно при запуске программы. Если этот флажок установлен, после запуска <application>StarDict</application> будет показан только значок в области уведомлений. Главное окно можно открыть, щёлкнув по нему.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Use open main window hotkey</guilabel></term>
+				<term><guilabel>Использовать комбинацию клавиш для открытия главного окна</guilabel></term>
 				<listitem>
-				<para>This option enable the hotkey that opens the Main window, and allows to change that hotkey.
-				When enabled, when user presses the hotkey, the Main window is presented to the user.
-				</para>
+				<para>Этот параметр позволяет включить комбинацию клавиш, которая открывает главное окно, а также изменить её. Если флажок установлен, при нажатии этой комбинации клавиш пользователю будет показано главное окно.</para>
 				<para>По умолчанию: включено.</para>
-				<para>Default hotkey: 
-				<keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>z</keycap></keycombo>
-				</para>
+				<para>Комбинация клавиш по умолчанию: <keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>z</keycap></keycombo></para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Transparency</guilabel></term>
+				<term><guilabel>Прозрачность</guilabel></term>
 				<listitem>
-				<para>
-				Allows to make the Main window transparent.
-				Moving the slider you may change transparency degree.
-				Transparency is measured in percents, it can range from 0 to 80,
-				where 0 ‒ fully opaque, 80 ‒ almost fully transparent.
-				Moving the slider has an immediate effect on the window.
-				</para>
-				<para>
-				On X11 this has any effect only on X screens with a compositing manager running.
-				On Windows it should work always.
-				</para>
-				<para>Default: 0 ‒ fully opaque.</para>
+				<para>Позволяет сделать главное окно прозрачным. Перемещайте ползунок для изменения степени прозрачности (эффект виден сразу же). Прозрачность измеряется в процентах, от 0 до 80, где 0 — полная непрозрачность, 80 — почти полная прозрачность.</para>
+				<para>На X11 этот параметр работает только для экранов X с запущенным композитным диспетчером окон. В Windows он работает всегда.</para>
+				<para>По умолчанию: 0 — полная непрозрачность.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
 		</sect3>
 		<sect3 id="stardict-prefs-main-window-searchwebsite">
-		<title>Search website</title>
-			<para><application>StarDict</application> may use Web search engines, Web dictionaries, databases providing web-based interface and other web sites providing information by request.
-			The text to search is incorporated into <acronym>URL</acronym>. 
-			Normally, the text is assigned to a GET request parameter.
-			For example, to search for word <emphasis>stardict</emphasis> in 
-			<ulink url="http://www.google.com" type="http">Google search engine</ulink> you may use the following
-			<acronym>URL</acronym>
-			<uri>http://www.google.com/search?q=<replaceable>stardict</replaceable></uri>.
-			You can search websites in <application>StarDict</application>
-			right-clicking the <guibutton>Internet search</guibutton> button in the Main window.
-			</para>
-			<para>
-			<application>StarDict</application> does not handle the web request itself, it only composes a <acronym>URL</acronym> and invokes an external program like a web browser or use platform-specific services to open the <acronym>URL</acronym>.
-			</para>
-			<para>
-			On this page you may see a list of websites. Use <guilabel>Add</guilabel> and 
-			<guilabel>Remove</guilabel> buttons to add new sites and remove existing records.
-			Use <guilabel>Up</guilabel> and <guilabel>Down</guilabel> arrow buttons to reorder records in the list. Each record consists of three items:
-			</para>
+		<title>Поиск в Интернете</title>
+			<para><application>StarDict</application> может использовать поисковые веб-системы, веб-словари, базы данных с веб-интерфейсом и другие веб-сайты, предоставляющие информацию по запросу. Текст для поиска включается в <acronym>URL-адрес</acronym>. Обычно текст назначается параметру запроса GET. Например, для поиска слова <emphasis>stardict</emphasis> в <ulink url="http://www.google.com" type="http">поисковой системе Google</ulink> можно использовать следующий <acronym>URL-адрес</acronym><uri>http://www.google.com/search?q=<replaceable>stardict</replaceable></uri>. В <application>StarDict</application> можно выполнять поиск на веб-сайтах, щёлкнув правой кнопкой мыши по кнопке <guibutton>Поиск в Интернете</guibutton> в главном окне.</para>
+			<para>Приложение <application>StarDict</application> не обрабатывает веб-запрос само, а только составляет <acronym>URL-адрес</acronym> и вызывает внешнюю программу (например, веб-браузер) или использует заданные платформой службы для открытия этого <acronym>URL-адреса</acronym>.</para>
+			<para>На этой странице представлен список веб-сайтов. Кнопки <guilabel>Добавить</guilabel> и <guilabel>Удалить</guilabel> позволяют добавлять новые сайты и удалять существующие записи. С помощью кнопок со стрелками <guilabel>Вверх</guilabel> и <guilabel>Вниз</guilabel> можно изменить порядок записей в списке. Каждая запись состоит из трёх элементов:</para>
 			<variablelist>
-			<title>Website record</title>
+			<title>Запись веб-сайта</title>
 				<varlistentry>
-				<term><guilabel>Website name</guilabel></term>
+				<term><guilabel>Название сайта</guilabel></term>
 				<listitem>
-				<para>This is a label you see in menu. Use a meaningful name.
-				</para>
+				<para>Это подпись, которая показана в меню. Используйте значимое имя.</para>
 				</listitem>
 				</varlistentry>
 				<varlistentry>
-				<term><guilabel>Website link</guilabel></term>
+				<term><guilabel>Адрес сайта</guilabel></term>
 				<listitem>
-				<para>Link to the main page of the website.
-				This link is opened when there is nothing to search for, the Search field is empty.
-				</para>
+				<para>Ссылка на главную страницу веб-сайта. Эта ссылка открывается, когда нечего искать (поле поиска пусто).</para>
 				</listitem>
 				</varlistentry>
 				<varlistentry>
-				<term><guilabel>Website search link</guilabel></term>
+				<term><guilabel>Поисковая ссылка</guilabel></term>
 				<listitem>
-				<para>Link to perform request. 
-				<emphasis>%s</emphasis> identifies the place where to insert the search text.
-				For example, <uri>http://www.google.com/search?q=<replaceable>%s</replaceable></uri>.
-				</para>
+				<para>Ссылка для выполнения запроса. <emphasis>%s</emphasis> указывает, где вставляется текст для поиска. Например: <uri>http://www.google.com/search?q=<replaceable>%s</replaceable></uri>.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
@@ -1867,38 +1532,28 @@ WineEnRu.ifo</screen>
 	</sect2>
 
 	<sect2 id="stardict-prefs-notification-area-icon">
-	<title>Иконка области уведомления</title>
+	<title>Значок в области уведомлений</title>
 		<sect3 id="stardict-prefs-notification-area-icon-options">
-		<title>Опции</title>
+		<title>Параметры</title>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>When middle mouse button is clicked:</guilabel> </term>
+				<term><guilabel>Когда нажата средняя кнопка мыши</guilabel> </term>
 				<listitem>
-				<para>Specifies an action to perform when user clicks the middle mouse button on the Notification
-				area icon. There are the following choices:</para>
+				<para>Указывает действие, которое следует выполнить, когда пользователь щёлкает средней кнопкой мыши по значку в области уведомлений. Доступны следующие варианты:</para>
 				<itemizedlist>
 					<listitem>
-					<para><guilabel>Query selection in floating window</guilabel></para>
+					<para><guilabel>Искать во всплывающем окне</guilabel></para>
 					</listitem>
 					<listitem>
-					<para><guilabel>Query selection in main window</guilabel></para>
+					<para><guilabel>Искать в главном окне</guilabel></para>
 					</listitem>
 					<listitem>
-					<para><guilabel>Do nothing</guilabel></para>
+					<para><guilabel>Ничего не делать</guilabel></para>
 					</listitem>
 				</itemizedlist>
-				<para>In the <guilabel>Do nothing</guilabel> case <application>StarDict</application> simply ignores middle button clicks,
-				otherwise <application>StarDict</application> get text of the current selection, search for it and displays
-				the results either in the Floating window or in the Main window.
-				</para>
-				<para>In case there are a number of windows on desktop having text selected,
-				there might be a confusion what text will be used.
-				<application>StarDict</application> works with the <emphasis>X</emphasis> <emphasis>Primary</emphasis> selection.
-				Only one application can own a selection at a time, so when you select something in 
-				an application that application becomes the selection owner, the previous owner loses
-				selection ownership. Now back to the question. <application>StarDict</application> will use the text that was selected last.
-				</para>
-				<para>Default: <guilabel>Query selection in floating window</guilabel>.</para>
+				<para>Если выбран вариант <guilabel>Ничего не делать</guilabel>, <application>StarDict</application> просто игнорирует щелчки средней кнопкой мыши. В ином случае <application>StarDict</application> получает текст текущего выделения, выполняет его поиск и показывает результат либо во всплывающем окне, либо в главном окне.</para>
+				<para>Если текст выделен в нескольких окнах на рабочем столе, может быть непонятно, какой текст будет использован. <application>StarDict</application> работает с <emphasis>основным</emphasis> выделением <emphasis>X</emphasis>. Выделением одновременно может владеть только одно приложение, поэтому при выборе пользователем какого-либо текста в приложении это приложение становится владельцем выделения; предыдущий владелец утрачивает владение выделением. Вернёмся к рассматриваемому вопросу. <application>StarDict</application> будет использовать тот текст, который был выделен последним.</para>
+				<para>По умолчанию: <guilabel>Искать во всплывающем окне</guilabel>.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
@@ -1908,20 +1563,20 @@ WineEnRu.ifo</screen>
 	<sect2 id="stardict-prefs-floating-window">
  	<title>Всплывающее окно</title>
 		<sect3 id="stardict-prefs-floating-options">
-		<title>Опции</title>
+		<title>Параметры</title>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Pronounce the word when it pops up.</guilabel> </term>
+				<term><guilabel>Произнести слово при появлении всплывающего окна</guilabel> </term>
 				<listitem>
-				<para>When set, pronounce the word when the Floating window shows translation.</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Если этот параметр включён, слово будет произноситься при показе перевода во всплывающем окне.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Show floating window if word not found.</guilabel></term>
+				<term><guilabel>Показать всплывающее окно, если слово не найдено</guilabel></term>
 				<listitem>
-				<para>This option allows to configure what to do if the word to be shown in the Floating window is not found. You have two choices: 1) do not show the Floating window at all ‒ this option is unset, 2) show the Floating window with text indicating that the word was not found ‒ this option is set.</para>
+				<para>Этот параметр позволяет настроить действие, которое следует выполнять, когда не удалось найти слово для показа во всплывающем окне. Доступны два варианта: 1) вообще не показывать всплывающее окно (для этого нужно снять флажок), 2) показать всплывающее окно с сообщением о том, что слово не было найдено (для этого нужно установить флажок).</para>
 				<para>По умолчанию: включено.</para>
 				</listitem>
 				</varlistentry>
@@ -1929,47 +1584,38 @@ WineEnRu.ifo</screen>
 		</sect3>
 		
 		<sect3 id="stardict-prefs-floating-settings">
-		<title>Settings</title>
+		<title>Параметры</title>
 			<variablelist>
 				<varlistentry>
-				<term><guilabel>Максимальная ширина окна.</guilabel> </term>
+				<term><guilabel>Максимальная ширина окна</guilabel> </term>
 				<listitem>
-				<para>Sets the Floating window's max width.</para>
+				<para>Устанавливает максимальную ширину всплывающего окна.</para>
 				<para>По умолчанию: 320.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Максимальная высота окна.</guilabel> </term>
+				<term><guilabel>Максимальная высота окна</guilabel> </term>
 				<listitem>
-				<para>Sets the Floating window's max height.</para>
+				<para>Устанавливает максимальную высоту всплывающего окна.</para>
 				<para>По умолчанию: 240.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Use custom background color:</guilabel></term>
+				<term><guilabel>Использовать свой цвет фона</guilabel></term>
 				<listitem>
-				<para>Enables to use custom color for background in the Floating window and select that color.</para>
-				<para>По умолчанию: выключено.</para>
+				<para>Позволяет использовать настраиваемый цвет фона во всплывающем окне и выбрать этот цвет.</para>
+				<para>По умолчанию: отключено.</para>
 				</listitem>
 				</varlistentry>
 				
 				<varlistentry>
-				<term><guilabel>Transparency</guilabel></term>
+				<term><guilabel>Прозрачность</guilabel></term>
 				<listitem>
-				<para>
-				Allows to make the Floating window transparent.
-				Moving the slider you may change transparency degree.
-				Transparency is measured in percents, it can range from 0 to 80,
-				where 0 ‒ fully opaque, 80 ‒ almost fully transparent.
-				Moving the slider has an immediate effect on the window.
-				</para>
-				<para>
-				On X11 this has any effect only on X screens with a compositing manager running.
-				On Windows it should work always.
-				</para>
-				<para>Default: 0 ‒ fully opaque.</para>
+				<para>Позволяет сделать всплывающее окно прозрачным. Перемещайте ползунок для изменения степени прозрачности (эффект виден сразу же). Прозрачность измеряется в процентах, от 0 до 80, где 0 — полная непрозрачность, 80 — почти полная прозрачность.</para>
+				<para>На X11 этот параметр работает только для экранов X с запущенным композитным диспетчером окон. В Windows он работает всегда.</para>
+				<para>По умолчанию: 0 — полная непрозрачность.</para>
 				</listitem>
 				</varlistentry>
 			</variablelist>
@@ -1978,7 +1624,7 @@ WineEnRu.ifo</screen>
   </sect1>
 
   <sect1 id="manage-dicts">
-  <title>Manage dictionaries</title>
+  <title>Управление словарями</title>
   
   <para>This section of the manual describes the 
   Manage dictionaries dialog that allows you to view and organize all dictionaries available in <application>StarDict</application>.
@@ -2309,375 +1955,260 @@ WineEnRu.ifo</screen>
   </sect1>
   
 	<sect1 id="stardict-details">
-	<title>Details</title>
+	<title>Информация</title>
 	<sect2 id="stardict-details-command-line">
-	<title>Command line options</title>
-	<para><application>StarDict</application> usage:
-	</para>
-	<para><command>stardict <replaceable>options</replaceable> <replaceable>query_word</replaceable></command>
+	<title>Параметры командной строки</title>
+	<para>Использование <application>StarDict</application>:</para>
+	<para><command>stardict <replaceable>опции</replaceable><replaceable>query_word</replaceable></command>
 	</para>
 	<variablelist>
 	<varlistentry>
 		<term>query_word</term>
 		<listitem>
-		<para>With <replaceable>query_word</replaceable> you request <application>StarDict</application> to look up the specified word just after startup. It has the same effect as if you had typed that word in the Search field. You may use pattens, fuzzy query and other supported modes.
-		</para>
+		<para>С помощью <replaceable>query_word</replaceable> вы указываете <application>StarDict</application> выполнить поиск указанного слова сразу после запуска. Это работает так же, как ввод этого слова в поле поиска. Можно использовать шаблоны, нечёткий запрос и другие поддерживаемые режимы.</para>
 		</listitem>
 	</varlistentry>
 	
 	<varlistentry>
-		<term>-m, --message-level=<replaceable>integer</replaceable></term>
+		<term>-m, --message-level=<replaceable>целое число</replaceable></term>
 		<listitem>
-		<para>This option specifies the minimum severity level of message that should be printed on console. The value may range from 0 to 6, where 0 means to suppress all output, 6 ‒ print all produced messages, including debug ones. Default value is 4 which passes informational messages, like what dictionaries are loaded during startup.
-		</para>
+		<para>Эта опция задаёт минимальный уровень серьёзности, при котором сообщение должно быть показано в консоли. Значение может находиться в диапазоне от 0 до 6, где 0 — подавлять весь вывод, 6 — выводить все созданные сообщения, включая отладочные. Значение по умолчанию: 4 (передавать информационные сообщения, например, о том, какие словари загружаются при запуске).</para>
 		</listitem>
 	</varlistentry>
 
 	<varlistentry>
-		<term>-l, --log-level=<replaceable>integer</replaceable></term>
+		<term>-l, --log-level=<replaceable>целое число</replaceable></term>
 		<listitem>
-		<para>This option specifies the minimum severity level of message that should be logged. The value may range from 0 to 6, where 0 means to suppress all output, 6 ‒ print all produced messages, including debug ones. Default value is 0, that is log file is not used. See <xref linkend="stardict-details-logging"/> for details about <application>StarDict</application> log.
-		</para>
+		<para>Эта опция задаёт минимальный уровень серьёзности сообщения, при котором его следует сохранить в журнале. Значение может находиться в диапазоне от 0 до 6, где 0 — подавлять весь вывод, 6 — выводить все созданные сообщения, включая отладочные. Значение по умолчанию: 0 (файл журнала не используется). Дополнительные сведения о журнале <application>StarDict</application>: <xref linkend="stardict-details-logging"/>.</para>
 		</listitem>
 	</varlistentry>
 
 	<varlistentry>
 		<term>-h, --hide</term>
 		<listitem>
-		<para>Do not show splash screen during startup and hide the Main window. Only notification area icon will be visible.
-		</para>
+		<para>Не показывать заставку при запуске и скрыть главное окно. Будет показан только значок в области уведомлений.</para>
 		</listitem>
 	</varlistentry>
 
 	<varlistentry>
 		<term>-n, --new</term>
 		<listitem>
-		<para>Start a new instance of <application>StarDict</application>.
-		By default <application>StarDict</application> checks if the application is already running and prevents starting the second instance.
-		</para>
-		<para>This option is only available in Windows edition and Gnome edition of <application>StarDict</application>.
-		</para>
+		<para>Запустить новый экземпляр <application>StarDict</application>. По умолчанию программа <application>StarDict</application> проверяет, работает ли уже приложение, и предотвращает запуск второго экземпляра.</para>
+		<para>Эта опция доступна только в версиях <application>StarDict</application> для Windows и Gnome.</para>
 		</listitem>
 	</varlistentry>
 
 	<varlistentry>
 		<term>-q, --quit</term>
 		<listitem>
-		<para>Quit an existing instance of <application>StarDict</application>.
-		</para>
-		<para>This option is only available in Gnome edition of <application>StarDict</application>.
-		</para>
+		<para>Выйти из существующего экземпляра <application>StarDict</application>.</para>
+		<para>Эта опция доступна только в версии <application>StarDict</application> для Gnome.</para>
 		</listitem>
 	</varlistentry>
 	
 	<varlistentry>
 		<term>--dirs-config</term>
 		<listitem>
-		<para>Specifies path to the <application>StarDict</application> directory configuration file. See <xref linkend="stardict-details-dirs"/> for details about <application>StarDict</application> directories and configuration file.
-		</para>
-		<para>This option is only available in Windows edition of <application>StarDict</application>.
-		</para>
+		<para>Указывает путь к файлу настройки каталогов <application>StarDict</application>. Дополнительные сведения о каталогах и файле настройки <application>StarDict</application>: <xref linkend="stardict-details-dirs"/>.</para>
+		<para>Этот параметр доступен только в Windows-версии <application>StarDict</application>.</para>
 		</listitem>
 	</varlistentry>
 		
 	<varlistentry>
 		<term>--portable-mode</term>
 		<listitem>
-		<para>Activate portable mode, see <xref linkend="stardict-portable"/>. Specifying the option is not enough to make <application>StarDict</application> to be <application>StarDict Portable</application>. You should avoid using this option unless you know what you are doing.
-		</para>
-		<para>This option is only available in Windows edition of <application>StarDict</application>.
-		</para>
+		<para>Включить мобильный режим, см. <xref linkend="stardict-portable"/>. Указания этой опции недостаточно для того, чтобы превратить <application>StarDict</application> в <application>StarDict Portable</application>. Пользоваться этой опцией можно только при условии полного понимания принципов её работы.</para>
+		<para>Этот параметр доступен только в Windows-версии <application>StarDict</application>.</para>
 		</listitem>
 	</varlistentry>
 	</variablelist>
 	</sect2>
 	
 	<sect2 id="stardict-details-dictmanage">
-	<title>Управление Словарями</title>
-	<para>To manage the dictionaries, click the <guibutton>Manage dictionaries</guibutton> button at the bottom-right corner of the Main window, or click 
-	the <guibutton>Main menu</guibutton> button and choose <guimenuitem>Dict manage</guimenuitem>. 
-	</para>
-	<para>В диалоге Управление Словарями, можете выключить словари которые не нужны, и установить порядок в котором словари будут опрашиваться.</para>
-	<para><application>StarDict</application> ищет словари в "~/.stardict/dic" и "/usr/share/stardict/dic", древовидные словари в "~/.stardict/treedict" and "/usr/share/stardict/treedict"</para>
+	<title>Управление словарями</title>
+	<para>Для управления словарями нажмите кнопку <guibutton>Управление словарями</guibutton>, расположенную в правом нижнем углу главного окна, или нажмите кнопку <guibutton>Главное меню</guibutton> и выберите пункт <guimenuitem>Управление словарями</guimenuitem>.</para>
+	<para>В диалоге управления словарями можно отключить ненужные словари, а также установить порядок, в котором словари будут опрашиваться.</para>
+	<para><application>StarDict</application> ищет файлы словарей в каталогах «~/.stardict/dic» и «/usr/share/stardict/dic», а файлы древовидных словарей — в каталогах «~/.stardict/treedict» и «/usr/share/stardict/treedict»</para>
 	</sect2>
 	
 	<sect2 id="stardict-details-help">
-	<title>Help</title>
-	<para>Inside <application>StarDict</application> you may open documentation either by pressing the <keycombo><keycap>F1</keycap></keycombo> key or by clicking the <guibutton>Main menu</guibutton> button, then the <guimenuitem>Help</guimenuitem> item in the popup menu. <application>StarDict</application> documentation has different formats depending on application edition. The primary documentation format is DocBook. <application>StarDict</application> installs documentation in DocBook format only in Gnome edition. In this edition documentation seamlessly integrates with Gnome documentation system. It can be read through <application>Help Browser</application>. Documentation was translated into a number of languages. You are presented with localized version if it's available. Gnome allows to configure the prefered language.
-	</para>
-	<para>In other editions of <application>StarDict</application> documentation is available in html format. You need to configure Web browser to view documentation, see <xref linkend="stardict-prefs-network-web-browser"/>. Choosing documentation language, <application>StarDict</application> roughly follows gettext package locale selection algorithm. The LANGUAGE enviroment variable is checked first. It's expected to contain a list of language codes in the order of preference. If the LANGUAGE variable is not set, the current locale is inspected. Finally, if documentation in prefered languages is not available, the english documentation is shown.
-	</para>
-	<para>
-	In Windows edition of <application>StarDict</application> the default language corresponds to the language selected in the <guilabel>Regional and Language Options</guilabel> dialog. 
-	</para>
+	<title>Справка</title>
+	<para>Чтобы открыть документацию в приложении <application>StarDict</application>, следует либо нажать клавишу <keycombo><keycap>F1</keycap></keycombo>, либо щёлкнуть по кнопке <guibutton>Главное меню</guibutton> и выбрать во всплывающем меню пункт <guimenuitem>Справка</guimenuitem>. Формат документации <application>StarDict</application> зависит от версии приложения. Основным форматом документации является DocBook. <application>StarDict</application> устанавливает документацию в формате DocBook только в версии для Gnome. В этой версии документация интегрируется в систему документации Gnome. Чтение документации можно выполнить с помощью <application>Браузера справки</application>. Документация была переведена на несколько языков; пользователю будет показана локализованная версия (если она доступна). Gnome позволяет настроить предпочитаемый язык.</para>
+	<para>В других версиях <application>StarDict</application> документация доступна в формате HTML. Потребуется настроить веб-браузер для просмотра документации, см. <xref linkend="stardict-prefs-network-web-browser"/>. При выборе языка документации <application>StarDict</application> в общих чертах следует алгоритму выбора локали пакета gettext. Сначала проверяется переменная среды LANGUAGE. Ожидается, что она будет содержать список кодов языков в порядке приоритета. Если переменная LANGUAGE не установлена, рассматривается текущая локаль. Наконец, если документация на предпочитаемых языках недоступна, отображается документация на английском.</para>
+	<para>В Windows-версии <application>StarDict</application> язык по умолчанию соответствует тому языку, который выбран в диалоге <guilabel>Язык и региональные стандарты</guilabel>.</para>
 	
 	<tip>
-	<title>Changing default language</title>
-	<para>Open <guilabel>Control Panel</guilabel>, <guilabel>Regional and Language Options</guilabel>.
-	<guilabel>Regional and Language Options</guilabel> dialog pops up. On the <guilabel>Regional Options</guilabel> tab select a language in the <guilabel>Stardards and formats</guilabel> group.
-	</para>
+	<title>Изменение языка по умолчанию</title>
+	<para>Откройте <guilabel>Панель управления</guilabel>, <guilabel>Язык и региональные стандарты</guilabel>. Появится диалоговое окно <guilabel>Язык и региональные стандарты</guilabel>. Перейдите на вкладку <guilabel>Региональные параметры</guilabel> и выберите язык в группе параметров <guilabel>Стандарты и форматы</guilabel>.</para>
 	</tip>
 	
-	<para>
-	You may override the default language with the LANGUAGE environment variable. 
-	</para>
-	<para>
-	Normally, help files can be found in the <filename>C:\Program Files\StarDict\help</filename> directory. Each directory corresponds to one language. Directories are named after language codes.
-	</para>
+	<para>Переопределить язык по умолчанию можно с помощью переменной среды LANGUAGE.</para>
+	<para>Обычно файлы справки находятся в каталоге <filename>C:\Program Files\StarDict\help</filename>. Каждый каталог соответствует одному языку. Названия каталогов совпадают с кодами языков.</para>
 	</sect2>
 	
 	<sect2 id="stardict-details-dirs">
-	<title>StarDict directories</title>
-	<para><application>StarDict</application> uses a number of directories to store application data, load and save configuration settings.
-	Default directories are assigned at build time, but some of them 
-	can be overriden with <filename>stardict-dirs.cfg</filename> file.
-	Overriding StarDict directories is useful for debugging,
-	preparing special configurations like StarDict-portable for Windows,
-	an ordinary user does not need this.
-	</para>
+	<title>Каталоги StarDict</title>
+	<para><application>StarDict</application> использует несколько каталогов для хранения данных приложения, загрузки и сохранения параметров конфигурации. Каталоги по умолчанию назначаются во время сборки, но некоторые из них можно переопределить с помощью файла <filename>stardict-dirs.cfg</filename>. Переопределение каталогов StarDict может быть полезным, если нужно выполнить отладку или подготовить специальные конфигурации (такие, как StarDict-portable для Windows); обычному пользователю это не требуется.</para>
 	
-	<para>
-	<application>StarDict</application> searches for the <filename>stardict-dirs.cfg</filename> file in the <varname>user_config_dir</varname> directory. You may override location of the <filename>stardict-dirs.cfg</filename> file with <varname>STARDICT_DIRS_CONFIG_FILE</varname> environment variable or with <parameter class="command">--dirs-config</parameter> command line option. Command line option takes the highest precedence, then the environment variable is inspected, and finally the file in the <varname>user_config_dir</varname> directory. The first specified file wins, it will be probed as a configuration file. If load fails, no other files will be tried.
-	</para>
+	<para><application>StarDict</application> ищет файл <filename>stardict-dirs.cfg</filename> в каталоге <varname>user_config_dir</varname>. Расположение файла <filename>stardict-dirs.cfg</filename> можно переопределить с помощью переменной среды <varname>STARDICT_DIRS_CONFIG_FILE</varname> или параметра командной строки <parameter class="command">--dirs-config</parameter>. Параметр командной строки обладает наивысшим приоритетом, за ним следует переменная среды, далее — файл в каталоге <varname>user_config_dir</varname>. В качестве файла конфигурации будет использован первый указанный файл. В случае сбоя загрузки программа не будет пытаться использовать другие файлы.</para>
 	
-	<para>The <filename>stardict-dirs.cfg</filename> file is a .ini-like config file. The syntax of .ini files is described in detail in the <ulink url="http://freedesktop.org/wiki/Specifications/desktop-entry-spec">Desktop Entry Specification</ulink>.
-	All keys must belong to <quote>general</quote> group. 
-	</para>
+	<para>Файл <filename>stardict-dirs.cfg</filename> похож на конфигурационный файл .ini. Синтаксис файлов .ini подробно описывается здесь: <ulink url="http://freedesktop.org/wiki/Specifications/desktop-entry-spec">Desktop Entry Specification</ulink>. Все ключи должны принадлежать группе <quote>general</quote>.</para>
 	
 	<tip>
-	<para>Do not forget to double backslash characters in values. Backslash is used as path separator in Windows.
-	</para>
+	<para>Не забудьте продублировать символы обратной косой черты в значениях. В Windows обратная косая черта используется в качестве разделителя пути.</para>
 	</tip>
 	
-	<para>Example of <filename>stardict-dirs.cfg</filename> file for Windows:
-	<programlisting>
+	<para>Пример файла <filename>stardict-dirs.cfg</filename> для Windows: <programlisting>
 <![CDATA[
 [general]
 data_dir=C:\\Program Files\\StarDict
 dll_dir=C:\\StarDict\\msvc_2008\\Debug
 plugin_dir=C:\\StarDict\\msvc_2008\\Debug
 ]]>
-	</programlisting>
-	</para>
+	</programlisting></para>
 	
 	<variablelist>
-	<title>StarDict directories</title>
+	<title>Каталоги StarDict</title>
 		<varlistentry>
-		<term>user_config_dir
-		</term>
+		<term>user_config_dir</term>
 		<listitem>
-		<para>A directory of configuration files.</para>
-		<para>Windows default: <filename>C:\Documents and Settings\%USERNAME%\Application Data\StarDict</filename>.
-		</para>
-		<para>Other default: <filename>~/.stardict</filename>.
-		</para>
-		<para>Environment variable: <varname>STARDICT_CONFIG_PATH</varname>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: user_config_dir.
-		</para>
+		<para>Каталог с файлами конфигурации.</para>
+		<para>Значение по умолчанию для Windows: <filename>C:\Documents and Settings\%USERNAME%\Application Data\StarDict</filename>.</para>
+		<para>Значение по умолчанию для других операционных систем: <filename>~/.stardict</filename>.</para>
+		<para>Переменная среды: <varname>STARDICT_CONFIG_PATH</varname>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: user_config_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>user_cache_dir
-		</term>
+		<term>user_cache_dir</term>
 		<listitem>
-		<para>User cache directory.</para>
-		<para>Windows default: <filename>C:\Documents and Settings\%USERNAME%\Temporary Internet Files\stardict</filename>.
-		</para>
-		<para>Other default: <filename>~/.cache/stardict</filename>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: user_cache_dir.
-		</para>
+		<para>Каталог пользовательского кэша. </para>
+		<para>Значение по умолчанию для Windows: <filename>C:\Documents and Settings\%USERNAME%\Temporary Internet Files\stardict</filename>.</para>
+		<para>Значение по умолчанию для других операционных систем: <filename>~/.cache/stardict</filename>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: user_cache_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>data_dir
-		</term>
+		<term>data_dir</term>
 		<listitem>
-		<para>Data directory.
-		</para>
-		<para>Windows default: <filename>C:\Program Files\StarDict</filename>.
-		</para>
-		<para>Other default: <filename>/usr/share/stardict</filename>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: data_dir.
-		</para>
+		<para>Каталог данных.</para>
+		<para>Значение по умолчанию для Windows: <filename>C:\Program Files\StarDict</filename>.</para>
+		<para>Значение по умолчанию для других операционных систем: <filename>/usr/share/stardict</filename>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: data_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>dll_dir
-		</term>
+		<term>dll_dir</term>
 		<listitem>
-		<para>A directory of hook dlls, in Windows edition only.
-		</para>
-		<para>Windows default: <varname>data_dir</varname>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: dll_dir.
-		</para>
+		<para>Каталог с dll обработчика, только в версии для Windows.</para>
+		<para>Значение по умолчанию для Windows: <varname>data_dir</varname>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: dll_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>plugin_dir
-		</term>
+		<term>plugin_dir</term>
 		<listitem>
-		<para>A directory of StarDict plugins.
-		</para>
-		<para>Windows default: <varname>data_dir</varname> + <filename>"/plugins"</filename>.
-		</para>
-		<para>Other default: <filename>/usr/lib/stardict/plugins</filename>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: plugins_dir.
-		</para>
+		<para>Каталог с модулями StarDict.</para>
+		<para>Значение по умолчанию для Windows: <varname>data_dir</varname> + <filename>"/plugins"</filename>.</para>
+		<para>Значение по умолчанию для других операционных систем: <filename>/usr/lib/stardict/plugins</filename>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: plugins_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>help_dir
-		</term>
+		<term>help_dir</term>
 		<listitem>
-		<para>A directory of help files, in all editions except Gnome edition.
-		</para>
-		<para>Default: <varname>data_dir</varname> + <filename>"/help"</filename>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: help_dir.
-		</para>
+		<para>Каталог с файлами справки, во всех версиях, за исключением версии для Gnome.</para>
+		<para>По умолчанию: <varname>data_dir</varname> + <filename>"/help"</filename>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: help_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>log_dir
-		</term>
+		<term>log_dir</term>
 		<listitem>
-		<para>A directory for log files.
-		</para>
-		<para>Windows default: <filename>C:\Documents and Settings\%USERNAME%\Local Settings\Temp\StarDict</filename>.
-		</para>
-		<para>Other default: <filename>/var/tmp/stardict</filename>.
-		</para>
-		<para><filename>stardict-dirs.cfg</filename> key: log_dir.
-		</para>
+		<para>Каталог для файлов журнала.</para>
+		<para>Значение по умолчанию для Windows: <filename>C:\Documents and Settings\%USERNAME%\Local Settings\Temp\StarDict</filename>.</para>
+		<para>Значение по умолчанию для других операционных систем: <filename>/var/tmp/stardict</filename>.</para>
+		<para>Ключ <filename>stardict-dirs.cfg</filename>: log_dir.</para>
 		</listitem>
 		</varlistentry>
 		
 	</variablelist>
 	
 	<note>
-	<para>Default values in the list above are given for the purpose of illustrating possible values of variables. Actual default value depends on a number of factors and cannot be computed easily. See AppDirs class in the <filename>conf.h</filename> file for details on how the default value is calculated.
-	</para>
+	<para>Значения по умолчанию в списке выше приведены в иллюстративных целях — чтобы показать возможные значения переменных. Фактическое значение по умолчанию зависит от ряда факторов, его не так просто вычислить. Чтобы узнать, как вычисляется значение по умолчанию, посмотрите на класс AppDirs в файле <filename>conf.h</filename>.</para>
 	</note>
 	
 	</sect2>
 
 	<sect2 id="stardict-details-logging">
-	<title>Logging</title>
-	<para><application>StarDict</application> may log messages into a file. By default logging is turned off, you may enable it specifing non-zero log level with <parameter class="command">--log-level</parameter> command line option, see <xref linkend="stardict-details-command-line"/>. 
-	</para>
-	<para>
-	By default messages are printed on to console, log file may be useful if console is not available like in Windows. Log may be useful in troubleshooting startup problems. 
-	</para>
-	<para>
-	For default location of the log directory see <xref linkend="stardict-details-dirs"/>, log_dir parameter. <application>StarDict</application> log files are named like <filename>stardict-<replaceable>process_number</replaceable>.log</filename>. We need to use process numbers to create unique log files, since multiple <application>StarDict</application> instances may run at the same time. To find the log file belonging to the most recently started instance of <application>StarDict</application>, consider file creation time.
-	</para>
+	<title>Журналирование</title>
+	<para><application>StarDict</application> может записывать сообщения в файл. По умолчанию журналирование отключено. Его можно включить, указав отличный от нуля уровень журналирования с помощью параметра командной строки <parameter class="command">--log-level</parameter> (см. <xref linkend="stardict-details-command-line"/>).</para>
+	<para>По умолчанию сообщения выводятся в консоли. Файл журнала может быть полезен, если консоль недоступна (как в Windows), а также при устранении проблем с запуском.</para>
+	<para>Сведения о стандартном расположении каталога с журналом доступны в разделе <xref linkend="stardict-details-dirs"/> (параметр log_dir). Файлы журнала <application>StarDict</application> имеют названия вида <filename>stardict-<replaceable>номер_процесса</replaceable>.log</filename>. Номера процессов нужны для создания уникальных файлов журнала, так как одновременно могут работать несколько экземпляров <application>StarDict</application>. Чтобы найти файл журнала, относящийся к последнему запущенному экземпляру <application>StarDict</application>, обратите внимание на время создания файла.</para>
 	
 	</sect2>
 	
 	<sect2 id="stardict-details-GUI-lang">
-	<title>Interface language</title>
-	<para>
-	This section describes the algorithm used to select interface language in <application>StarDict</application>.
-	</para>
+	<title>Язык интерфейса</title>
+	<para>В этом разделе описывается алгоритм, используемый для выбора языка интерфейса в <application>StarDict</application>.</para>
 	
 	<orderedlist>
 	<!-- stardict-loader project, winpidgin_set_locale function. -->
 	<listitem>
 	<anchor id="GUILangStarDictLoader" xreflabel="1"/>
-	<para>
-	Retrieve <varname>STARDICTLANG</varname> environment variable. Goto <xref linkend="GUILangSetLANG"/> if the variable is defined.
-	</para>
+	<para>Извлечь переменную среды <varname>STARDICTLANG</varname>. Перейти к <xref linkend="GUILangSetLANG"/>, если переменная определена.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangUserDefLocale" xreflabel="2"/>
-	<para>
-	Retrieve the user default locale
-	(to set the default locale:
-	<menuchoice>
-	<guibutton>Control Panel</guibutton>
-	<guibutton>Regional and Language Options</guibutton>
-	<guibutton>Regional Options</guibutton>
-	<guilabel>Standards and formats</guilabel>
-	<guilabel>Language</guilabel>
-	</menuchoice>).
-	If locale is not defined, use "en".
-	</para>
+	<para>Извлечь стандартную локаль пользователя (чтобы установить локаль по умолчанию: <menuchoice><guibutton>Панель управления</guibutton><guibutton>Язык и региональные стандарты</guibutton><guibutton>Региональные параметры</guibutton><guilabel>Стандарты и форматы</guilabel><guilabel>Язык</guilabel></menuchoice>). Если локаль не определена, использовать «en».</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangSetLANG" xreflabel="3"/>
-	<para>
-	Assign the language code to the <varname>LANG</varname> environment variable.
-	</para>
+	<para>Назначить код языка переменной среды <varname>LANG</varname>.</para>
 	</listitem>
 	
 	<!-- gettext package, dcigettext.c file, guess_category_value function 
 	The steps below are based on comments in this function. -->
 	<listitem>
 	<anchor id="GUILangGetLANGUAGE" xreflabel="4"/>
-	<para>
-	Retrieve the value of the environment variable <varname>LANGUAGE</varname>.
-	This is a GNU extension.  Its value can be a colon-separated list of locale names.
-	If defined, goto <xref linkend="GUILangAvailableTransl"/>.
-	</para>
+	<para>Извлечь значение переменной среды <varname>LANGUAGE</varname>. Это расширение GNU. Значение может представлять собой разделённый двоеточиями список имён локалей. Если переменная определена, перейти к <xref linkend="GUILangAvailableTransl"/>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangGetPOSIXVars" xreflabel="5"/>
-	<para>
-	The value of the environment variable <varname>LC_ALL</varname>, <varname>LC_xxx</varname>, or <varname>LANG</varname>.
-	More precisely, the first among these that is set to a non-empty value.
-	This is how POSIX specifies it.  The value is a single locale name.
-	If defined, goto <xref linkend="GUILangAvailableTransl"/>.
-	</para>
+	<para>Значение переменной среды <varname>LC_ALL</varname>, <varname>LC_xxx</varname> или <varname>LANG</varname>. Точнее, первой из этих переменных, которая установлена в непустое значение. Так это определяется в POSIX. Значение представляет собой имя одной локали. Если определено, перейти к <xref linkend="GUILangAvailableTransl"/>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangGetSystemLangs" xreflabel="6"/>
-	<para>
-	A system-dependent preference list of languages.  Its value can be a
-	colon-separated list of locale names.
-	If defined, goto <xref linkend="GUILangAvailableTransl"/>.
-	</para>
+	<para>Зависящий от системы список предпочитаемых языков. Его значением может быть разделённый двоеточиями список имён локалей. Если определено, перейти к <xref linkend="GUILangAvailableTransl"/>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangGetDefaultLocale" xreflabel="7"/>
-	<para>
-	A system-dependent default locale name.
-	If defined, goto <xref linkend="GUILangAvailableTransl"/>.
-	</para>
+	<para>Зависящее от системы имя стандартной локали. Если определено, перейти к <xref linkend="GUILangAvailableTransl"/>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangAvailableTransl" xreflabel="8"/>
-	<para>
-	Processes the found value as a colon-separated list of language codes. Select the first available language. If none is available, select no translation.
-	</para>
+	<para>Обработать найденное значение как разделённый двоеточиями список кодов языков. Выбрать первый доступный язык. Если доступных языков нет, не выбирать перевод.</para>
 	</listitem>
 	
 	</orderedlist>
 	
 	<warning>
-	<para>Steps <xref linkend="GUILangGetLANGUAGE"/> through <xref linkend="GUILangAvailableTransl"/> describe translation selection algorithm of the gettext package. The actual procedure may be different.
-	</para>
+	<para>Шаги с <xref linkend="GUILangGetLANGUAGE"/> по <xref linkend="GUILangAvailableTransl"/> описывают алгоритм выбора перевода пакета gettext. Фактическая процедура может отличаться.</para>
 	</warning>
 	
-	<para>
-	The best way to specify interface language of <application>StarDict</application> is to define <varname>STARDICTLANG</varname> environment variable. It should contain language code. See <filename class="directory">$StarDictDataDir/locale</filename> for the list of supported languages.
-	</para>
+	<para>Наилучший способ указать язык интерфейса <application>StarDict</application> — определить переменную среды <varname>STARDICTLANG</varname>. Она должна содержать код языка. Список поддерживаемых языков доступен в <filename class="directory">$StarDictDataDir/locale</filename>.</para>
 	</sect2>
 	
 	<sect2 id="stardict-details-dictionaries">
@@ -2843,21 +2374,12 @@ plugin_dir=C:\\StarDict\\msvc_2008\\Debug
 
 	<sect1 id="stardict-portable">
 	<title>StarDict Portable</title>
-	<para><application>StarDict Portable</application> is special edition of <application>StarDict</application> for Windows that works with any hardware you like (USB flash drive, portable hard drive, etc). Now you can carry <application>StarDict</application> along with all settings with you. Use them on any Windows computer. All personal data are saved along with application.
-	</para>
+	<para><application>StarDict Portable</application> — специальная версия <application>StarDict</application> для Windows, которая работает с любым аппаратным обеспечением (USB-устройство флэш-памяти, переносной жёсткий диск и т.д.). Теперь программу <application>StarDict</application> вместе со всеми её настройками можно носить с собой и использовать на любом компьютере под управлением Windows. Вместе с программой сохраняются и все личные данные.</para>
 	
-	<para>
-	<application>StarDict Portable</application> relies on the <ulink url="http://portableapps.com" type="http">PortableApps.com Platform</ulink>. It provides convenient shell to start and configure portable applications. On the screenshot below you may see PortableApps.com menu with <application>StarDict Portable</application> and <application>StarDict Editor portable</application>. You may change interface language of the menu and <application>StarDict Portable</application>. 
-	To do that click 
-	<menuchoice>
-	<guibutton>Options</guibutton>
-	<guimenu>Language</guimenu>
-	</menuchoice>
-	and select the desired language.
-	</para>
+	<para><application>StarDict Portable</application> опирается на <ulink url="http://portableapps.com" type="http">платформу PortableApps.com</ulink>. Она предоставляет удобную оболочку для запуска и настройки переносимых приложений. На снимке экрана ниже показано меню PortableApps.com со <application>StarDict Portable</application> и <application>StarDict Editor Portable</application>. Можно изменить язык интерфейса меню и <application>StarDict Portable</application>. Для этого выберите пункт <menuchoice><guibutton>Настройки</guibutton><guimenu>Язык</guimenu></menuchoice> и укажите нужный язык.</para>
 	
 	<figure id="portable-apps-menu-fig"> 
-	<title>PortableApps.com menu</title> 
+	<title>Меню PortableApps.com</title> 
 	<screenshot> 
 		<mediaobject> 
 			<imageobject><imagedata fileref="figures/portable_apps_menu.png" format="PNG"/> 
@@ -2870,26 +2392,22 @@ plugin_dir=C:\\StarDict\\msvc_2008\\Debug
 	</figure>
   
   <sect2 id="stardict-portable-differences">
-  <title>Differences from non-portable version</title>
-  <para>
-  Functionality of <application>StarDict Portable</application> is almost identical to the non-portable version. Only features that ties application to the specific machine are disabled. The list below details the deferences.
-  </para>
+  <title>Отличия от непереносимой версии</title>
+  <para>Функциональность <application>StarDict Portable</application> почти идентична функциональности непереносимой версии. Отключены только те возможности, которые привязывают приложение к определённому компьютеру. Описание различий приводится в списке ниже.</para>
   
 	<variablelist>
-	<title>StarDict Portable features</title>
+	<title>Возможности StarDict Portable</title>
 		<varlistentry>
-		<term>WordPick Adobe Acrobat plugin
-		</term>
+		<term>Модуль WordPick Adobe Acrobat</term>
 		<listitem>
-		<para>WordPick Adobe Acrobat plugin is disabled in portable version. Portable application policies forbids to modify the host machine.</para>
+		<para>Модуль WordPick Adobe Acrobat отключён в переносимой версии. Политики переносимых приложений запрещают изменять хост-компьютер.</para>
 		</listitem>
 		</varlistentry>
 		
 		<varlistentry>
-		<term>Run <application>StarDict</application> when Windows starts
-		</term>
+		<term>Запускать <application>StarDict</application> при запуске Windows</term>
 		<listitem>
-		<para>This option is disabled in portable version. It does not make sense to autostart application residing on removable storage.</para>
+		<para>Этот параметр отключён в переносимой версии. Нет смысла автоматически запускать приложение, находящееся на съёмном носителе.</para>
 		</listitem>
 		</varlistentry>
 	</variablelist>
@@ -2897,110 +2415,70 @@ plugin_dir=C:\\StarDict\\msvc_2008\\Debug
 	</sect2>
 	
 	<sect2 id="stardict-portable-install">
-	<title>Installing StarDict Portable</title>
-	<para>
-	This section describes <application>StarDict Portable</application> installation procedure.
-	</para>
+	<title>Установка StarDict Portable</title>
+	<para>В этом разделе описывается процедура установки <application>StarDict Portable</application>.</para>
 	
 	<orderedlist>
 	<listitem>
-	<para>
-	Download and install <ulink url="http://portableapps.com" type="http">PortableApps.com Suite</ulink> on a USB flash drive or wherever you want.
-	</para>
+	<para>Загрузите и установите <ulink url="http://portableapps.com" type="http">PortableApps.com Suite</ulink> на USB-устройство флэш-памяти или в любое другое нужное расположение.</para>
 	</listitem>
 	
 	<listitem>
-	<para>
-	Download <application>StarDict Portable</application> package from <ulink url="https://sourceforge.net/projects/stardict/files/" type="http">StarDict website</ulink>. The package file ends with <filename>.paf.exe</filename>, for example, <filename>StarDictPortable-stardict.sourceforge.com_3.0.2.paf.exe</filename>.
-	</para>
+	<para>Загрузите пакет <application>StarDict Portable</application> с <ulink url="https://sourceforge.net/projects/stardict/files/" type="http">веб-сайта StarDict</ulink>. Название файла пакета заканчивается на <filename>.paf.exe</filename>, например: <filename>StarDictPortable-stardict.sourceforge.com_3.0.2.paf.exe</filename>.</para>
 	</listitem>
 	
 	<listitem>
-	<para>
-	Launch PortableApps.com menu.
-	</para>
+	<para>Запустите меню PortableApps.com.</para>
 	</listitem>
 	
 	<listitem>
-	<para>
-	Click
-	<menuchoice>
-	<guibutton>Options</guibutton>
-	<guimenu>Install a New Apps</guimenu>
-	</menuchoice>.
-	Select <application>StarDict Portable</application> package you've just downloaded, click <guibutton>OK</guibutton> and proceed with installer.
-	</para>
+	<para>Нажмите <menuchoice><guibutton>Настройки</guibutton><guimenu>Установка новых приложений</guimenu></menuchoice>. Выберите только что загруженный пакет <application>StarDict Portable</application>, нажмите кнопку <guibutton>OK</guibutton> и продолжите работу в установщике.</para>
 	</listitem>
 	
 	<listitem>
-	<para>
-	When installation completes, you will have two new items in the menu: <application>StarDict Portable</application> and <application>StarDict Editor portable</application>. You are ready to use <application>StarDict Portable</application>.
-	</para>
+	<para>После завершения установки в меню появятся два новых пункта: <application>StarDict Portable</application> и <application>StarDict Editor Portable</application>. Теперь можно приступить к работе со <application>StarDict Portable</application>.</para>
 	</listitem>
 	</orderedlist>
 	
 	</sect2>
 	
 	<sect2 id="stardict-portable-no-menu">
-	<title>Launching StarDict Portable directly</title>
+	<title>Запуск StarDict Portable напрямую</title>
 	
-	<para>
-	You may use <application>StarDict Portable</application> without PortableApps.com menu. In the <filename class="directory">$PortableAppsRoot\PortableApps\StarDictPortable-stardict.sourceforge.com</filename> directory you may find two executables: <filename>StarDictPortable.exe</filename> and <filename>StarDictEditorPortable.exe</filename>, they start <application>StarDict Portable</application> and <application>StarDict Editor Portable</application> respectively. <varname>$PortableAppsRoot</varname> here is the directory where PortableApps.com suite was installed, normally this is the root of a drive, like <filename>X:\</filename>.
-	</para>
+	<para><application>StarDict Portable</application> можно использовать и без меню PortableApps.com. В каталоге <filename class="directory">$PortableAppsRoot\PortableApps\StarDictPortable-stardict.sourceforge.com</filename> находятся два исполняемых файла: <filename>StarDictPortable.exe</filename> и <filename>StarDictEditorPortable.exe</filename>. Они запускают, соответственно, <application>StarDict Portable</application> и <application>StarDict Editor Portable</application>. <varname>$PortableAppsRoot</varname> — каталог установки набора PortableApps.com, обычно это корень диска, например <filename>X:\</filename>.</para>
 	
-	<para>
-	You may pass parameters to <application>StarDict Portable</application> as with normal <application>StarDict</application>, see <xref linkend="stardict-details-command-line"/>. This maybe useful to enable logging, for example.
-	</para>
+	<para>Программе <application>StarDict Portable</application> можно передавать параметры таким же образом, как и обычной программе <application>StarDict</application>, см. <xref linkend="stardict-details-command-line"/>. Например, может быть полезным включение журналирования.</para>
 	
 	<caution>
-	<para>
-	Do not start files in the <filename class="directory">$PortableAppsRoot\PortableApps\StarDictPortable-stardict.sourceforge.com\App\StarDict</filename> directory directly! In this case <application>StarDict</application> runs in normal non-portable mode, it will search applications settings and other data file in usually places on the host machine instead of directories near the portable application. First, your settings will not be found, second, new settings will be saved on the host machine.
-	</para>
+	<para>Не запускайте файлы прямо в каталоге <filename class="directory">$PortableAppsRoot\PortableApps\StarDictPortable-stardict.sourceforge.com\App\StarDict</filename>! В этом случае <application>StarDict</application> будет работать в обычном (а не в мобильном) режиме; поиск файлов настройки и других данных будет выполняться в их обычных расположениях на хост-компьютере, а не в каталогах рядом с переносимым приложением. Во-первых, параметры настройки не будет найдены, а во-вторых, на хост-компьютере будут сохранены новые параметры.</para>
 	</caution>
 	
 	</sect2>
 	
 	<sect2 id="stardict-portable-GUI-lang">
-	<title>Interface language</title>
-	<para>
-	This section describes the algorithm used to select interface language in <application>StarDict Portable</application>.
-	</para>
+	<title>Язык интерфейса</title>
+	<para>В этом разделе описывается алгоритм, используемый для выбора языка интерфейса в <application>StarDict Portable</application>.</para>
 	
 	<orderedlist>
 	<listitem>
 	<anchor id="GUILangPortableAppsLang" xreflabel="1"/>
 	 <!-- PortableApps.comLocaleglibc environment variable -->
-	<para>Inspect PortableApps.com suite interface language
-	(<menuchoice>
-	<guibutton>Options</guibutton>
-	<guimenu>Language</guimenu>
-	</menuchoice>).
-	If the language is not selected,  goto <xref linkend="GUILangSettingsFile"/>.
-	If the language is "en_US", goto <xref linkend="GUILangLanguageVariable"/>.
-	Check if <application>StarDict</application> provides translation to the specified language. Goto <xref linkend="GUILangLanguageVariable"/> if yes, and goto <xref linkend="GUILangSettingsFile"/> otherwise.
-	</para>
+	<para>Изучить значение параметра интерфейса языка набора PortableApps.com (<menuchoice><guibutton>Настройки</guibutton><guimenu>Язык</guimenu></menuchoice>). Если язык не выбран, перейти к <xref linkend="GUILangSettingsFile"/>. Если язык установлен в значение «en_US», перейти к <xref linkend="GUILangLanguageVariable"/>. Проверить, предоставляет ли <application>StarDict</application> перевод на указанный язык. Если да, перейти к <xref linkend="GUILangLanguageVariable"/>, в ином случае — к <xref linkend="GUILangSettingsFile"/>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangSettingsFile" xreflabel="2"/>
-	<para>
-	Read the <filename class="directory">$PortableAppsRoot\PortableApps\StarDictPortable-stardict.sourceforge.com\Data\settings\StarDictPortableSettigns.ini</filename> file. Inspect value of the <varname>STARDICTLANG</varname> option in the <varname>Language</varname> section. If the option is not specified, goto <xref linkend="GUILangLaunchStarDict"/>. If the value is "en_US", goto <xref linkend="GUILangLanguageVariable"/>. Check if <application>StarDict</application> provides translation to the specified language. Goto <xref linkend="GUILangLanguageVariable"/> if yes, and goto <xref linkend="GUILangLaunchStarDict"/> otherwise.
-	</para>
+	<para>Прочитать файл <filename class="directory">$PortableAppsRoot\PortableApps\StarDictPortable-stardict.sourceforge.com\Data\settings\StarDictPortableSettigns.ini</filename>. Изучить значение параметра <varname>STARDICTLANG</varname> в разделе <varname>Язык</varname>. Если параметр не указан, перейти к <xref linkend="GUILangLaunchStarDict"/>. Если значение представляет собой «en_US», перейти к <xref linkend="GUILangLanguageVariable"/>. Проверить, предоставляет ли <application>StarDict</application> перевод на указанный язык. Если да, перейти к <xref linkend="GUILangLanguageVariable"/>, в ином случае — к <xref linkend="GUILangLaunchStarDict"/>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangLanguageVariable" xreflabel="3"/>
-	<para>
-	Assign the language code to the <varname>STARDICTLANG</varname> environment variable.
-	</para>
+	<para>Назначить код языка переменной среды <varname>STARDICTLANG</varname>.</para>
 	</listitem>
 	
 	<listitem>
 	<anchor id="GUILangLaunchStarDict" xreflabel="4"/>
-	<para>
-	Launch <application>StarDict</application> executable, namely <filename>stardict.exe</filename>.
-	For subsequent steps see <xref linkend="stardict-details-GUI-lang"/>.
-	</para>
+	<para>Запустить исполняемый файл <application>StarDict</application>, а именно <filename>stardict.exe</filename>. Последующие шаги см. в разделе <xref linkend="stardict-details-GUI-lang"/>.</para>
 	</listitem>
 	
 	</orderedlist>
@@ -3010,17 +2488,13 @@ plugin_dir=C:\\StarDict\\msvc_2008\\Debug
 	</sect1>
 
 	<sect1 id="stardict-troubleshooting">
-	<title>Troubleshooting</title>
-	<para>If you experience problems with <application>StarDict</application>, examine <application>StarDict</application> output.
-	By default the application prints the most important messages to standard output and standard error. To see messages, start <application>StarDict</application> from the console.
-	You may increase verbosity of the output using the <parameter class="command">--message-level</parameter> command line option, see <xref linkend="stardict-details-command-line"/>.
-	</para>
+	<title>Устранение неисправностей</title>
+	<para>Если в работе <application>StarDict</application> возникают проблемы, изучите вывод <application>StarDict</application>. По умолчанию приложение выводит наиболее важные сообщения в стандартный поток вывода и стандартный поток ошибок. Для просмотра сообщений запустите <application>StarDict</application> из консоли. Вывод можно сделать более подробным с помощью параметра командной строки <parameter class="command">--message-level</parameter> (см. <xref linkend="stardict-details-command-line"/>).</para>
 	
-	<para>To see standard output and standard error on Windows, start <application>StarDict</application> from windows console and pass non-zero parameter to the <parameter class="command">--message-level</parameter> command line option. Unfortunately, often windows console can not display all unicode characters that are sent to output. If this problem effects you, redirect output to a file or use <application>StarDict</application> logging facility.
-	</para>
+	<para>Для просмотра стандартного потока вывода и стандартного потока ошибок в Windows запустите <application>StarDict</application> из консоли Windows и передайте ненулевой аргумент параметру командной строки <parameter class="command">--message-level</parameter>. К сожалению, консоль Windows часто не может отобразить все отправляемые на вывод символы Юникода. В этом случае следует перенаправить вывод в файл или воспользоваться возможностью журналирования <application>StarDict</application>.</para>
 
 	<figure id="stardict-windows-console-fig"> 
-	<title>Starting <application>StarDict</application> from windows console</title> 
+	<title>Запуск <application>StarDict</application> из консоли Windows</title> 
 	<screenshot> 
 		<mediaobject> 
 			<imageobject><imagedata fileref="figures/stardict_windows_console.png" format="PNG"/> 
@@ -3032,9 +2506,7 @@ plugin_dir=C:\\StarDict\\msvc_2008\\Debug
 	</screenshot> 
 	</figure>
     
-	<para>In some cases, <application>StarDict</application> prints nothing to console or console is not available.
-	Then turn on logging function, see <xref linkend="stardict-details-logging"/> for details.
-	</para>
+	<para>Иногда <application>StarDict</application> ничего не выводит в консоль или консоль недоступна. В таком случае следует включить возможность журналирования (подробнее: <xref linkend="stardict-details-logging"/>).</para>
 	
 	<para>If <application>StarDict</application> fails to start, it's recommended to set the output message level to the highest value so you can see all produced messages. They may help in diagnosing the cause of the problem. <application>StarDict</application> loads a number of plug-ins at startup. A broken plug-in may crash or hang the entire application. Each plug-in prints <computeroutput>Loading <symbol>PLUG-IN NAME</symbol> plug-in...</computeroutput> at the very begging of the plug-in initialization process. <computeroutput><symbol>PLUG-IN NAME</symbol> plug-in loaded.</computeroutput> message marks the end of the initialization process. If you do not see the paired message, the plug-in definitely fails to load. Plug-ins normally print error messages, they may help you to identify and fix the problem. On the other hand, you may simply remove the misbehaving plug-in. Just remove the corresponding library. All plug-in are optional, <application>StarDict</application> will work without plug-ins.
 	</para>
@@ -3079,7 +2551,7 @@ bookname: StarDict dictionary, wordcount 9
 
  <sect1 id="stardict-projects">
    <title>Связанные проекты</title>
-   <para><application>StarDict</application> не был бы возможен, без вклада многих проектов. Здесь перечислен короткий список проектов которые помогли <application>StarDict</application>.</para>
+   <para><application>StarDict</application> не удалось бы создать без вклада многих другихпроектов. Здесь приведён краткий список проектов, которые помогли <application>StarDict</application>.</para>
 
 	<sect2 id="stardict-projects-stardict1.3">
 		<sect2info>
@@ -3094,7 +2566,7 @@ bookname: StarDict dictionary, wordcount 9
 		</authorgroup>
 		</sect2info>
 		<title>StarDict 1.31</title>
-		<para>StarDict 1.31 основанный на Motif/LessTif был написан в 1999. <application>StarDict</application> 2 взял много хороших идей из StarDict1.31 такие как, "Неяный запрос".</para> 
+		<para>Программа StarDict 1.31, основанная на Motif/LessTif, была написана в 1999 году. <application>StarDict</application> 2 позаимствовала много хороших идей и возможностей из StarDict 1.31, например «Сканирование выделенного» и «Нечёткий запрос».</para> 
     </sect2>
 
 	<sect2 id="stardict-projects-stardict1.33-plus">
@@ -3110,19 +2582,19 @@ bookname: StarDict dictionary, wordcount 9
 		</authorgroup>
 		</sect2info>
 		<title>StarDict 1.33+</title>
-		<para>StarDict1.33+ это сильно улучшенный StarDict1.31. Было добавлено много словарей и это заставило меня понять что словари не препятствие к новому, основаному на GTK2 словарной оболочке. Если бы не было StarDict1.33+, я бы не начал <application>StarDict</application> 2 проект. Автор также помогал мне портировать StarDict 1.3 словари в <application>StarDict</application> 2.</para> 
+		<para>StarDict 1.33+ представляет собой значительно улучшенную программу StarDict 1.31. Было добавлено много словарей, и это помогло мне понять, что данные словарей не помешают создать новую словарную оболочку на основе GTK2. Если бы не было StarDict1.33+, я бы не начал проект <application>StarDict</application> 2. Автор также помогал мне портировать файлы данных словарей StarDict 1.3 в <application>StarDict</application> 2.</para> 
 	</sect2>
 
 	<sect2 id="stardict-projects-dictd">
-     	<title>DICT Проект</title>
-     	<para>Большое количество dictd словарей было сконвертировано в <application>StarDict</application>. dictzip разработанный для dictd используется <application>StarDict</application> также.</para> 
-	    <para>Для получения дополнительной информации о проекте DICT пожалуйста посетите <ulink url="http://www.dict.org" type="http">www.dict.org</ulink>.</para>
+     	<title>Проект DICT</title>
+     	<para>Многие словари dictd были портированы в <application>StarDict</application>. dictzip, разработанный для dictd, также используется <application>StarDict</application>.</para> 
+	    <para>Для получения дополнительной информации о проекте DICT посетите <ulink url="http://www.dict.org" type="http">www.dict.org</ulink>.</para>
     </sect2>
 
 	<sect2 id="stardict-projects-quick">
      	<title>*Quick</title>
-     	<para>&gt;Большое количество wquick словарей было сконвертировано в <application>StarDict</application>.</para> 
-	    <para>Для получения дополнительной информации о проекте *Quick пожалуйста посетите <ulink url="http://www.futureware.at/quick.htm" type="http">*Quick</ulink>.</para>
+     	<para>&gt;Многие словари wquick словарей были портированы в <application>StarDict</application>.</para> 
+	    <para>Для получения дополнительной информации о проекте *Quick посетите <ulink url="http://www.futureware.at/quick.htm" type="http">*Quick</ulink>.</para>
     </sect2>
 
 	<sect2 id="stardict-projects-blowfish">
@@ -3137,9 +2609,9 @@ bookname: StarDict dictionary, wordcount 9
 		</author>
 		</authorgroup>
 		</sect2info>
-		<title>Blowfish Проект</title>
-		<para>Blowfish Проект предоставил Оксфордовский Английско-Китайский словарь.</para> 
-		<para>Для получения дополнительной информации о проекте Blowfish пожалуйста посетите <ulink url="http://igloo.its.unimelb.edu.au/Blowfish/" type="http">Сайт проекта Blowfish</ulink>.</para>
+		<title>Проект Blowfish</title>
+		<para>Проект Blowfish предоставил Оксфордский английско-китайский словарь.</para> 
+		<para>Для получения дополнительной информации о проекте Blowfish посетите <ulink url="http://igloo.its.unimelb.edu.au/Blowfish/" type="http">сайт проекта Blowfish</ulink>.</para>
 	</sect2>
 
 	<sect2 id="stardict-projects-xdict">
@@ -3191,7 +2663,7 @@ bookname: StarDict dictionary, wordcount 9
 		</authorgroup>
 		</sect3info>
 		<title>cdict5 v1.3</title>
-		<para>Для получения дополнительной информации о проекте cdict5 пожалуйста посетите <ulink url="http://www.freshports.org/chinese/cdict5/" type="http">Сайт проекта cdict5</ulink>.</para>
+		<para>Для получения дополнительной информации о проекте cdict5 посетите <ulink url="http://www.freshports.org/chinese/cdict5/" type="http">сайт проекта cdict5</ulink>.</para>
 		</sect3>
 	</sect2>
 
@@ -3208,8 +2680,8 @@ bookname: StarDict dictionary, wordcount 9
 		</authorgroup>
 		</sect2info>
 		<title>CEDICT</title>
-		<para>CEDICT's dictionary has been ported to <application>StarDict</application>.</para> 
-		<para>Для получения дополнительной информации о проекте CEDICT пожалуйста посетите <ulink url="http://www.mandarintools.com/cedict.html" type="http">Сайт проекта CEDICT</ulink>.</para>
+		<para>Словари CEDICT были портированы в <application>StarDict</application>.</para> 
+		<para>Для получения дополнительной информации о проекте CEDICT посетите <ulink url="http://www.mandarintools.com/cedict.html" type="http">сайт проекта CEDICT</ulink>.</para>
 	</sect2>
 
 	<sect2 id="stardict-projects-cffd">
@@ -3225,8 +2697,8 @@ bookname: StarDict dictionary, wordcount 9
 		</authorgroup>
 		</sect2info>
 		<title>CFFD</title>
-		<para>иконка <application>StarDict</application> создана при помощи этой программы. CFFD также предоставила информацию для меня.</para> 
-		<para>Для получения дополнительной информации о проекте CFFD пожалуйста посетите <ulink url="http://cffd.cosoft.org.cn" type="http">Сайт проекта CFFD</ulink>.</para>
+		<para>Значок <application>StarDict</application> создан с помощью этой программы. CFFD также предоставила полезную информацию для меня.</para> 
+		<para>Для получения дополнительной информации о проекте CFFD посетите <ulink url="http://cffd.cosoft.org.cn" type="http">сайт проекта CFFD</ulink>.</para>
 	</sect2>
 
 
@@ -3251,43 +2723,19 @@ bookname: StarDict dictionary, wordcount 9
      <application>StarDict</application>, please visit the <ulink url="http://stardict-4.sourceforge.net" type="http">StarDict Web
      site</ulink>.  
    </para>
-   <para>
-     Send all comments, suggestions, and bug reports to 
-     Hu Zheng (<email>huzheng001@gmail.com</email>).
-   </para>
+   <para>Присылайте все комментарии, предложения и сообщения об ошибках Hu Zheng (<email>huzheng001@gmail.com</email>).</para>
 
-   <para>
-     Македонскиот превод е направен од Новица Наков
-     (<email>acivon@mail.com.mk</email>). Сите коментари
-     и предлози околу овој превод праќајте ги на горната адреса.
-   </para>
+   <para>Македонскиот превод е направен од Новица Наков (<email>acivon@mail.com.mk</email>). Сите коментари и предлози околу овој превод праќајте ги на горната адреса.</para>
 
-   <para>
-     Nederlandse vertaling is gedaan door Ruud Slaats
-     (<email>ruudslaats@eurotechgroup.nl</email>). Stuur al u commentaar, suggesties betreffende deze vertaling naar <email>ruudslaats@eurotechgroup.nl</email>.
-   </para>
+   <para>Nederlandse vertaling is gedaan door Ruud Slaats (<email>ruudslaats@eurotechgroup.nl</email>). Stuur al u commentaar, suggesties betreffende deze vertaling naar <email>ruudslaats@eurotechgroup.nl</email>.</para>
 
-   <para>
-     На русский язык переведено Александром Мурыгиным
-     (<email>murygin@aitoc.com</email>). Пожалуйста присылайте все комментарии и
-     предложения относящиеся к этому переводу на этот адрес.
-   </para>
+   <para>На русский язык переведено Александром Мурыгиным (<email>murygin@aitoc.com</email>). Обновление перевода в 2023 году выполнила Олеся Герасименко (<email>translation-team@basealt.ru</email>). Пожалуйста, присылайте все комментарии и предложения, относящиеся к этому переводу, на эти адреса.</para>
 
-   <para>
-     На українську мову перекладено Сергієм Дубиком
-     (<email>dubyk@library.lviv.ua</email>). Будь ласка присилайте всі коментарі та
-     пропозиції, що відносяться до цього перекладу, на цю адресу.
-   </para>
+   <para>На українську мову перекладено Сергієм Дубиком (<email>dubyk@library.lviv.ua</email>). Будь ласка присилайте всі коментарі та пропозиції, що відносяться до цього перекладу, на цю адресу.</para>
 
-   <para>
-     中文翻译由耿军军完成
-     (<email>geng82@163.com</email>)。请将有关本翻译的评论和建议发到我的邮箱。
-   </para>
+   <para>中文翻译由耿军军完成 (<email>geng82@163.com</email>)。请将有关本翻译的评论和建议发到我的邮箱。</para>
 
-   <para>
-     繁體中文翻譯由陳曉陽完成
-     (<email>roy.chan@debian.org.hk</email>)。請將有關本翻譯的評論和建議電郵給我。
-   </para>
+   <para>繁體中文翻譯由陳曉陽完成 (<email>roy.chan@debian.org.hk</email>)。請將有關本翻譯的評論和建議電郵給我。</para>
 
 	<!-- For translations: uncomment this:
 
