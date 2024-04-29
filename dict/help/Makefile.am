@@ -1,4 +1,7 @@
 ## Process this file with automake to produce Makefile.in.
+
+EXTRA_DIST = ReadMe.txt
+
 ## always include gnome-doc-utils.make because we need to generate DocBook files in linguas dirs
 include $(top_srcdir)/gnome-doc-utils.make
 if GNOME_SUPPORT
