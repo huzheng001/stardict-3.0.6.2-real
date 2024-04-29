@@ -452,10 +452,10 @@ bool stardict_virtualdict_plugin_init(StarDictVirtualDictPlugInObject *obj)
 {
 	obj->lookup_func = lookup;
 	obj->dict_name = _("Spelling Suggestion");
-	obj->author = _("Hu Zheng");
-	obj->email = _("huzheng001@gmail.com");
-	obj->website = _("http://www.huzheng.org");
-	obj->date = _("2023.12.22");
+	//obj->author = _("Hu Zheng");
+	//obj->email = _("huzheng001@gmail.com");
+	//obj->website = _("http://www.huzheng.org");
+	//obj->date = _("2023.12.22");
 	broker = enchant_broker_init();
 	layout = pango_layout_new(gtk_widget_get_pango_context(plugin_info->mainwin));
 
